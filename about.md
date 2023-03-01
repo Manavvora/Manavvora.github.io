@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-## Workspace
-
 My name is Manav Vora and I'm a Master's student in Aerospace Engineering at the University of Illinois Urbana-Champaign (UIUC).
 Currently, I am working as a research assistant, with Prof. Melkior Ornik, in the LEADCAT lab at UIUC where I'm conducting my research in 
 sequential decision making, artificial intelligence and optimal policy synthesis for stochastic systems. I completed my undergraduate 
