@@ -1,20 +1,20 @@
 # Built with Jekyll 3.6.0
 
 # Setup
-title:               Nakul.
-tagline:             A Diligent Explorer
-description:         Nakul Randad's Personal Website
-url:                 'http://nakulrandad.github.io'
+title:               Manav.
+tagline:             Persistent and Dedicated
+description:         Manav Vora's Personal Website
+url:                 'http://Manavvora.github.io'
 baseurl:             ''
 
 # About/contact
 author:
-  name:              Nakul Randad
-  url:               http://nakulrandad.github.io
-  email:             nakulrandad@gmail.com
+  name:              Manav Vora
+  url:               http://Manavvora.github.io
+  email:             mkvora2@illinois.edu
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme: orange
+color-scheme: blue
 
 # Permalinks
 permalink: pretty
