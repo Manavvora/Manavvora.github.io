@@ -1,0 +1,37 @@
+---
+layout: default
+title: "Nakul's Website"
+---
+<div class="introduction">
+  <h1>hi.</h1>
+
+  <p>
+    <!-- Ed is a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme designed for textual -->
+    I am Nakul Randad. I'm passionate about exploring and learning 'new stuff'. Maybe it is not just with me;
+    humans are curious. A famous quote by Leonardo da Vinci (because why not):
+    <strong>“To develop a complete mind: Study the science of art; Study the art of science.
+      Learn how to see. Realize that everything connects to everything else.”</strong>
+    I have loads of pieces of wisdom to share but if I continue, you will call me a hypocrite.
+  </p>
+  <p>
+    I pursued my undergrad at Indian Institute of Technology Bombay with a major in Aerospace Engineering
+    and minor in System & Controls Engineering. Currently I work as a Quantitative Analyst at Goldman Sachs.
+    Not planning to work on anything brilliant (crazy) as of now but stay tuned!
+  </p>
+</div>
+
+<hr>
+
+<div class="toc">
+  <h2>To know more about me</h2>
+  <ul class="texts">
+    {% for item in site.texts %}
+
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
