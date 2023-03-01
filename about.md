@@ -12,7 +12,7 @@ studies with honors at the Indian Institute of Technology Bombay with a major in
 and minor in System & Controls Engineering, where I developed a strong foundation in aerial robotics, deep learning and control. 
 As a researcher, my work is guided by 
 Albert Einstein's quote : 
-**“Strive not to be a success but rather to be of value.”**  **Enter**.(space, space, Enter)
+**“Strive not to be a success but rather to be of value.”**  
 
 When I'm not in the lab, I'm either working out in the gym or watching sports. I'm a huge sports fan and enjoy watching cricket, basketball 
 (favourite team : Golden State Warriors) and tennis (favourite player : Roger Federer). I've recently also developed a a newfound interest in 
