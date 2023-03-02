@@ -7,19 +7,24 @@ title: Projects
 ### [Research Assistant](https://mornik.web.illinois.edu/research/group/)
 <details>
   <summary>Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
+
   - An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget. 
   - Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.
   - Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.
   - Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.
+
 </details>
+
 
 
 ### [Lunar Lander](https://github.com/Manavvora/Lunar_RL)
 <details>
   <summary>Reinforcement Learning for Optimal Trajectory Synthesis</summary>
+
   - Performance analysis and comparison of DQN, SARSA, Q-Learning and Monte Carlo RL algorithms for optimal landing of a lunar lander on the surface of the moon  in the presence of external disturbances.
   - Created animation using the Python Gym Environment to visualize the performance of all algorithms.
   - Obtained the final trajectory of spacecraft, from the animations, under different algorithms using object tracking in OpenCV.
+
   | Simulation | Final Trajectory |
   | :--------: | :--------------: |
   | ![random](assets/random.gif)<br>*Random policy* | ![random_plot](assets/random.png) |
@@ -27,6 +32,7 @@ title: Projects
   | ![q_learning](assets/qlearning.gif)<br>*QLearning* | ![q_learning](assets/q_learning.png) |
   | ![sarsa](assets/sarsa.gif)<br>*SARSA* | ![sarsa](assets/sarsa.png) |
   | ![dqn](assets/dqn.gif)<br>*DQN* | ![dqn](assets/DQN.png) |
+
 </details>
 
 
