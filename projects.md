@@ -31,6 +31,26 @@ title: Projects
     <li>Obtained the final trajectory of spacecraft, from the animations, under different algorithms using object tracking in OpenCV.</li>
   </ul>
 
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid #ccc;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-size: 10px;
+      margin-top: 4px;
+    }
+  </style>
+
   <table>
     <tr>
       <th>Simulations</th>
