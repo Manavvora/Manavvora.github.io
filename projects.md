@@ -2,8 +2,21 @@
 layout: page
 title: Projects
 ---
--<details>
-### <summary>[Research Assistant](https://mornik.web.illinois.edu/research/group/) | Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
+* Projects
+- <details>
+  <summary>Project A: Intro about the project</summary>
+
+  In detail about Project A (has a couple of paragraphs)
+  </details>
+
+- <details>
+  <summary>Project B: Intro about the project</summary>
+
+  In detail about Project B (has a couple of paragraphs and images)
+  </details>
+
+<details>
+<summary>[Research Assistant](https://mornik.web.illinois.edu/research/group/) | Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
 
     -   An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget. 
     -   Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.
