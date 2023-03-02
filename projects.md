@@ -3,11 +3,12 @@ layout: page
 title: Projects
 ---
 
-### [QuITO](https://github.com/chatterjee-d/QuITO) | Quasi-Interpolation based Trajectory Optimization
+### [Research Assistant](https://mornik.web.illinois.edu/research/group/) | Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs
 
--   A direct multiple shooting algorithm to solve a class of constrained nonlinear minimum energy optimal control problems.
--   This technique is based on the theory of approximate approximations - a quasi-interpolation scheme.
--   A novel way of transcribing the optimal control problem (OCP) into a nonlinear program (NLP) is designed.
+-   An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget 
+-   Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components
+-   Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm
+-   Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis
 
 ### [AUV-IITB](http://auv-iitb.org/) | Underwater Robotics
 
