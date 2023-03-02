@@ -20,9 +20,8 @@ title: Projects
 
 
 
-
-
 ### [Lunar Lander](https://github.com/Manavvora/Lunar_RL)
+
 <details>
   <summary>Reinforcement Learning for Optimal Trajectory Synthesis</summary>
 
@@ -31,14 +30,15 @@ title: Projects
   - Obtained the final trajectory of spacecraft, from the animations, under different algorithms using object tracking in OpenCV.
 
   | Simulation | Final Trajectory |
-  | :--------: | :--------------: |
-  | ![random](assets/random.gif)<br>*Random policy* | ![random_plot](assets/random.png) |
-  | ![monte_carlo](assets/monte_carlo.gif)<br>*Monte Carlo* | ![monte_carlo](assets/monte_carlo.png) |
-  | ![q_learning](assets/qlearning.gif)<br>*QLearning* | ![q_learning](assets/q_learning.png) |
-  | ![sarsa](assets/sarsa.gif)<br>*SARSA* | ![sarsa](assets/sarsa.png) |
-  | ![dqn](assets/dqn.gif)<br>*DQN* | ![dqn](assets/DQN.png) |
+  | --- | --- |
+  | ![random](assets/random.gif) | ![random_plot](assets/random.png) |
+  | ![monte_carlo](assets/monte_carlo.gif) | ![monte_carlo](assets/monte_carlo.png) |
+  | ![q_learning](assets/qlearning.gif) | ![q_learning](assets/q_learning.png) |
+  | ![sarsa](assets/sarsa.gif) | ![sarsa](assets/sarsa.png) |
+  | ![dqn](assets/dqn.gif) | ![dqn](assets/DQN.png) |
 
 </details>
+
 
 
 ### [RiP](https://github.com/Manavvora/RiP_Planner) | Risk Aware Planner
