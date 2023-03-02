@@ -25,17 +25,26 @@ title: Projects
 <details>
   <summary>Reinforcement Learning for Optimal Trajectory Synthesis</summary>
 
-  - Performance analysis and comparison of DQN, SARSA, Q-Learning and Monte Carlo RL algorithms for optimal landing of a lunar lander on the surface of the moon  in the presence of external disturbances.
-  - Created animation using the Python Gym Environment to visualize the performance of all algorithms.
-  - Obtained the final trajectory of spacecraft, from the animations, under different algorithms using object tracking in OpenCV.
+  <ul>
+    <li>Performance analysis and comparison of DQN, SARSA, Q-Learning and Monte Carlo RL algorithms for optimal landing of a lunar lander on the surface of the moon  in the presence of external disturbances.</li>
+    <li>Created animation using the Python Gym Environment to visualize the performance of all algorithms.</li>
+    <li>Obtained the final trajectory of spacecraft, from the animations, under different algorithms using object tracking in OpenCV.</li>
+  </ul>
 
-  | Simulation | Final Trajectory |
-  | --- | --- |
-  | ![random](assets/random.gif) | ![random_plot](assets/random.png) |
-  | ![monte_carlo](assets/monte_carlo.gif) | ![monte_carlo](assets/monte_carlo.png) |
-  | ![q_learning](assets/qlearning.gif) | ![q_learning](assets/q_learning.png) |
-  | ![sarsa](assets/sarsa.gif) | ![sarsa](assets/sarsa.png) |
-  | ![dqn](assets/dqn.gif) | ![dqn](assets/DQN.png) |
+  <table>
+    <tr>
+      <th>Simulations</th>
+      <th>Final Trajectory</th>
+    </tr>
+    <tr>
+      <td><img src="{{ site.baseurl }}/assets/dqn.gif" alt="DQN" /></td>
+      <td><img src="{{ site.baseurl }}/assets/DQN.png" alt="DQN" /></td>
+    </tr>
+    <tr>
+      <td><img src="{{ site.baseurl }}/assets/sarsa.gif" alt="SARSA" /></td>
+      <td><img src="{{ site.baseurl }}/assets/sarsa.gif" alt="SARSA" /></td>
+    </tr>
+  </table>
 
 </details>
 
