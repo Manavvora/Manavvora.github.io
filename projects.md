@@ -8,13 +8,16 @@ title: Projects
 
 <details>
   <summary>Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
-
-  - An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget. 
-  - Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.
-  - Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.
-  - Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.
+  
+  <ul>
+    <li>An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget.</li>
+    <li>Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.</li>
+    <li>Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.</li>
+    <li>Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.</li>
+  </ul>
 
 </details>
+
 
 
 
