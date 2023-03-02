@@ -37,12 +37,20 @@ title: Projects
       <th>Final Trajectory</th>
     </tr>
     <tr>
-      <td><img src="{{ site.baseurl }}/assets/dqn.gif" alt="DQN" /></td>
-      <td><img src="{{ site.baseurl }}/assets/DQN.png" alt="DQN" /></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/dqn.gif" alt="DQN" /><figcaption>DQN</figcaption></figure></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/DQN.png" alt="DQN" /><figcaption>DQN</figcaption></figure></td>
     </tr>
     <tr>
-      <td><img src="{{ site.baseurl }}/assets/sarsa.gif" alt="SARSA" /></td>
-      <td><img src="{{ site.baseurl }}/assets/sarsa.gif" alt="SARSA" /></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/sarsa.gif" alt="SARSA" /><figcaption>SARSA</figcaption></figure></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/sarsa.png" alt="SARSA" /><figcaption>SARSA</figcaption></figure></td>
+    </tr>
+    <tr>
+      <td><figure><img src="{{ site.baseurl }}/assets/qlearning.gif" alt="Q-Learning" /><figcaption>Q-Learning</figcaption></figure></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/q_learning.png" alt="Q-Learning" /><figcaption>Q-Learning</figcaption></figure></td>
+    </tr>
+    <tr>
+      <td><figure><img src="{{ site.baseurl }}/assets/monte_carlo.gif" alt="Monte Carlo" /><figcaption>Monte Carlo</figcaption></figure></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/monte_carlo.png" alt="Monte Carlo" /><figcaption>Monte Carlp</figcaption></figure></td>
     </tr>
   </table>
 
