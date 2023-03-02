@@ -2,13 +2,14 @@
 layout: page
 title: Projects
 ---
+-<details>
+### <summary>[Research Assistant](https://mornik.web.illinois.edu/research/group/) | Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
 
-### [Research Assistant](https://mornik.web.illinois.edu/research/group/) | Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs
-
--   An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget. 
--   Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.
--   Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.
--   Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.
+    -   An algorithm for optimal policy synthesis for very large state space multi-component POMDPs within a budget. 
+    -   Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.
+    -   Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.
+    -   Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.
+</details>
 
 ### [Lunar Lander](https://github.com/Manavvora/Lunar_RL) | Reinforcement Learning for Optimal Trajectory Synthesis
 
