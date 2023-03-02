@@ -3,6 +3,7 @@ layout: page
 title: Projects
 ---
 (Click on the project summary to know more!)
+
 ### [Research Assistant](https://mornik.web.illinois.edu/research/group/)
 <details>
   <summary>Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
