@@ -98,11 +98,11 @@ title: Projects
     }
     .container img {
       max-width: 33%;
-      margin: 8px;
+      margin: 4px;
     }
     .container figcaption {
       text-align: center;
-      font-size: 14px;
+      font-size: 10px;
       margin-top: 8px;
     }
   </style>
