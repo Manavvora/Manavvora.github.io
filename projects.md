@@ -173,23 +173,23 @@ budget of 10,000 units</figcaption>
   </ul>
 
   <style>
-    .container {
+    .container2 {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .container img {
+    .container2 img {
       max-width: 200%;
       margin: 4px;
     }
-    .container figcaption {
+    .container2 figcaption {
       text-align: center;
       font-size: 10px;
       margin-top: 8px;
     }
   </style>
 
-  <div class="container">
+  <div class="container2">
     <figure>
       <img src="{{ site.baseurl }}/assets/AlexNet.png" alt="description of image 1" />
       <figcaption>AlexNet Architecture</figcaption>
