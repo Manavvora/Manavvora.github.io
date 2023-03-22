@@ -4,7 +4,7 @@ title: Projects
 ---
 (Click on the project summary to know more!)
 
-### [Research Assistant](https://mornik.web.illinois.edu/research/group/)
+### [Multi-Agent Optimal Planning](https://mornik.web.illinois.edu/research/group/)
 
 <details>
   <summary>Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</summary>
@@ -14,7 +14,42 @@ title: Projects
     <li>Motivated by the problem of finding optimal maintenance and inspection policies for a group of infrastructure components.</li>
     <li>Developed a simulator in Julia for simulating the component-POMDP and solving it using the POMCP algorithm.</li>
     <li>Devised an optimal budget distribution algorithm and increased computational feasibility and efficiency of the optimal policy synthesis.</li>
+    <li>Outperformed current policies used in practice by a huge margin.</li>
+    <li>This work has been jointly submitted to IEEE LCSS and CDC.</li>
   </ul>
+
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container img {
+      max-width: 100%;
+      margin: 4px;
+    }
+    .container figcaption {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 8px;
+    }
+  </style>
+
+  <div class="container">
+    <figure>
+      <img src="{{ site.baseurl }}/assets/ttfr_vs_budget.png" alt="description of image 1" />
+      <figcaption>Comparison of the proposed (blue) and baseline (red) approaches using time-to-failure for a range of budget values</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/component_history.png" alt="description of image 2" />
+      <figcaption>Health history of a component under proposed approach (top) and baseline (bottom)</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/allocation.gif" alt="description of image 3" />
+      <figcaption>Comparison of baseline and proposed budget allocation approaches for all components for an overall
+budget of 10,000 units</figcaption>
+    </figure>
+  </div>
 
 </details>
 
@@ -70,7 +105,7 @@ title: Projects
     </tr>
     <tr>
       <td><figure><img src="{{ site.baseurl }}/assets/monte_carlo.gif" alt="Monte Carlo" /><figcaption>Monte Carlo</figcaption></figure></td>
-      <td><figure><img src="{{ site.baseurl }}/assets/monte_carlo.png" alt="Monte Carlo" /><figcaption>Monte Carlp</figcaption></figure></td>
+      <td><figure><img src="{{ site.baseurl }}/assets/monte_carlo.png" alt="Monte Carlo" /><figcaption>Monte Carlo</figcaption></figure></td>
     </tr>
   </table>
 
@@ -126,9 +161,54 @@ title: Projects
 
 
 
-### [Mini Games](https://github.com/nakulrandad/Games)
+### [GRASP Lab] | Neural ODEs 
+<details>
+  <summary>Lie Algebra Based Neural ODEs</summary>
+  
+  <ul>
+    <li>Contributed to developing a Lie Algebra informed Neural ODE for accurate prediction of non-holonomic dynamics.</li>
+    <li>Grasped the fundamentals of deep neural networks by implementing various architectures like LeNet, ResNet, AlexNet, GoogleNet etc. on the fashion MNIST dataset.</li>
+    <li>Created a 16x4 Wide ResNet model from scratch and achieved validation error under 5% on the CIFAR-10 dataset.</li>
+    <li>Executed RRT-star algorithm on Dubins’ Car with 2 nearest neighbor search heuristics to understand Lie Algebra.</li>
+  </ul>
 
-A 2D game developed as a hobby project wich includes designing the enemy & player battleships, background effects, music additions and creating powerups.
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container img {
+      max-width: 100%;
+      margin: 4px;
+    }
+    .container figcaption {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 8px;
+    }
+  </style>
+
+  <div class="container">
+    <figure>
+      <img src="{{ site.baseurl }}/assets/AlexNet.png" alt="description of image 1" />
+      <figcaption>AlexNet Architecture</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/GoogleNet.png" alt="description of image 2" />
+      <figcaption>GoogleNet Architecture</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/ResNet.gif" alt="description of image 3" />
+      <figcaption>ResNet Architecture</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/VGG.gif" alt="description of image 3" />
+      <figcaption>VGG Architecture</figcaption>
+    </figure>
+  </div>
+
+</details>
 
 ### [Solar Radiation Prediction](https://docs.google.com/presentation/d/1cYWwQR02r17Bgc7hXHiDjqEfJLtR3x6AE6GK5HvttNw/edit?usp=sharing) | Machine Learning
 
