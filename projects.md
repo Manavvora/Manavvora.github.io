@@ -179,7 +179,7 @@ budget of 10,000 units</figcaption>
       align-items: center;
     }
     .container img {
-      max-width: 100%;
+      max-width: 200%;
       margin: 4px;
     }
     .container figcaption {
@@ -199,11 +199,11 @@ budget of 10,000 units</figcaption>
       <figcaption>GoogleNet Architecture</figcaption>
     </figure>
     <figure>
-      <img src="{{ site.baseurl }}/assets/ResNet.gif" alt="description of image 3" />
+      <img src="{{ site.baseurl }}/assets/ResNet.png" alt="description of image 3" />
       <figcaption>ResNet Architecture</figcaption>
     </figure>
     <figure>
-      <img src="{{ site.baseurl }}/assets/VGG.gif" alt="description of image 3" />
+      <img src="{{ site.baseurl }}/assets/VGG.png" alt="description of image 3" />
       <figcaption>VGG Architecture</figcaption>
     </figure>
   </div>
