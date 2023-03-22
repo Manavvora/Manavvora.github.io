@@ -161,7 +161,7 @@ budget of 10,000 units</figcaption>
 
 
 
-### [GRASP Lab] | Neural ODEs 
+### [Deep Learning](https://github.com/Manavvora/Deep-Learning) | Neural ODEs 
 <details>
   <summary>Lie Algebra Based Neural ODEs</summary>
   
@@ -210,10 +210,49 @@ budget of 10,000 units</figcaption>
 
 </details>
 
-### [Solar Radiation Prediction](https://docs.google.com/presentation/d/1cYWwQR02r17Bgc7hXHiDjqEfJLtR3x6AE6GK5HvttNw/edit?usp=sharing) | Machine Learning
+### Surveillance Drones
+<details>
+  <summary>Control of Agile Tethered Drone Attached to Moving Vehicle</summary>
+  
+  <ul>
+    <li>Created a novel Gazebo model of a quadrotor UAV tethered to a fixed support via a flexible tether.</li>
+    <li>Developed a Gazebo control force plugin using C++ to apply external force to the system for dynamics simulation.</li>
+    <li>Developed a ROS controller package and merged with PixHawk to achieve trajectory tracking for the drone with less than 3% error.</li>
+  </ul>
 
--   Implemented model which predicts irradiation falling on the ground for different prediction horizons using SVM (Support Vector Machine) and compares with the Neural Networks.
--   The multilayer perceptron architecture in NN has three layers with ReLU activation.
+  <style>
+    .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container2 img {
+      max-width: 150%;
+      margin: 4px;
+    }
+    .container2 figcaption {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 8px;
+    }
+  </style>
+
+  <div class="container2">
+    <figure>
+      <img src="{{ site.baseurl }}/assets/model.jpg" alt="description of image 1" />
+      <figcaption>Gazebo Model of Drone with Flexible Tether</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/gazebo_sim.png" alt="description of image 2" />
+      <figcaption>Dynamics simulation in presence of external disturbance</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ site.baseurl }}/assets/btp2_2.png" alt="description of image 3" />
+      <figcaption>Position Tracking via PX4</figcaption>
+    </figure>
+  </div>
+
+</details>
 
 ### [Time Optimal River Crossing Problem](https://github.com/nakulrandad/Optimal-Control-Theory)
 
