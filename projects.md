@@ -97,7 +97,7 @@ title: Projects
       align-items: center;
     }
     .container img {
-      max-width: 33%;
+      max-width: 50%;
       margin: 4px;
     }
     .container figcaption {
