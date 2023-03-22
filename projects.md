@@ -220,14 +220,14 @@ budget of 10,000 units</figcaption>
     <li>Developed a ROS controller package and merged with PixHawk to achieve trajectory tracking for the drone with less than 3% error.</li>
   </ul>
 
-  <style>
+  <!-- <style>
     .container2 {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .container2 img {
-      max-width: 150%;
+    .container img {
+      max-width: 100%;
       margin: 4px;
     }
     .container2 figcaption {
@@ -235,9 +235,9 @@ budget of 10,000 units</figcaption>
       font-size: 10px;
       margin-top: 8px;
     }
-  </style>
+  </style> -->
 
-  <div class="container2">
+  <div class="container">
     <figure>
       <img src="{{ site.baseurl }}/assets/model.jpg" alt="description of image 1" />
       <figcaption>Gazebo Model of Drone with Flexible Tether</figcaption>
