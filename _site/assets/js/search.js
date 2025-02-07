@@ -11,23 +11,10 @@ var index = elasticlunr(function () {
 
 // Add to this index the proper metadata from the Jekyll content
 
-index.addDoc({
-  title: "My poem",
-  author: "Nakul Randad",
-  layout: "poem",
-  content: "\n  The library is pretty\n  And so are books\n  Deep\n\n",
-  id: 0
-});
 console.log( jQuery.type(index) );
 
 // Builds reference data (maybe not necessary for us, to check)
-var store = [{
-  "title": "My poem",
-  "author": "Nakul Randad",
-  "layout": "poem",
-  "link": "/texts/mypoem/",
-}
-]
+var store = []
 
 // Query
 var qd = {}; // Gets values from the URL

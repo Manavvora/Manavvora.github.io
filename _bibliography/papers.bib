@@ -3,113 +3,180 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{puthumanaillam2024moral,
+  title={A Moral Imperative: The Need for Continual Superalignment of Large Language Models},
+  author={Puthumanaillam*, Gokul and Vora*, Manav and Thangeda, Pranay and Ornik, Melkior},
+  journal={arXiv preprint arXiv:2403.14683},
+  year={2024},
+  pdf={llm.pdf},
+  abstract={This paper examines the challenges associated with achieving life-long superalignment in AI systems, particularly large language models (LLMs). Superalignment is a theoretical framework that aspires to ensure that superintelligent AI systems act in accordance with human values and goals. Despite its promising vision, we argue that achieving superalignment requires substantial changes in the current LLM architectures due to their inherent limitations in comprehending and adapting to the dynamic nature of these human ethics and evolving global scenarios. We dissect the challenges of encoding an ever-changing spectrum of human values into LLMs, highlighting the discrepancies between static AI models and the dynamic nature of human societies. To illustrate these challenges, we analyze two distinct examples: one demonstrates a qualitative shift in human values, while the other presents a quantifiable change. Through these examples, we illustrate how LLMs, constrained by their training data, fail to align with contemporary human values and scenarios. The paper concludes by exploring potential strategies to address and possibly mitigate these alignment discrepancies, suggesting a path forward in the pursuit of more adaptable and responsive AI systems.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@INPROCEEDINGS{10801659,
+  author={Puthumanaillam*, Gokul and Vora*, Manav and Ornik, Melkior},
+  booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={ComTraQ-MPC: Meta-Trained DQN-MPC Integration for Trajectory Tracking with Limited Active Localization Updates}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={13592-13598},
+  keywords={Location awareness;Accuracy;Trajectory tracking;Trajectory planning;Decision making;Stochastic processes;Trajectory;State estimation;Intelligent robots;Predictive control},
+  doi={10.1109/IROS58592.2024.10801659},
+  pdf={iros.pdf},
+  code={https://github.com/gokulp01/ComTraq-MPC},
+  video={https://www.youtube.com/watch?v=evpeBYR2GPE},
+  preview={arch4.png},
+  abstract={Optimal decision-making for trajectory tracking in partially observable, stochastic environments where the number of active localization updates -- the process by which the agent obtains its true state information from the sensors -- are limited, presents a significant challenge. Traditional methods often struggle to balance resource conservation, accurate state estimation and precise tracking, resulting in suboptimal performance. This problem is particularly pronounced in environments with large action spaces, where the need for frequent, accurate state data is paramount, yet the capacity for active localization updates is restricted by external limitations. This paper introduces ComTraQ-MPC, a novel framework that combines Deep Q-Networks (DQN) and Model Predictive Control (MPC) to optimize trajectory tracking with constrained active localization updates. The meta-trained DQN ensures adaptive active localization scheduling, while the MPC leverages available state information to improve tracking. The central contribution of this work is their reciprocal interaction: DQN's update decisions inform MPC's control strategy, and MPC's outcomes refine DQN's learning, creating a cohesive, adaptive system. Empirical evaluations in simulated and real-world settings demonstrate that ComTraQ-MPC significantly enhances operational efficiency and accuracy, providing a generalizable and approximately optimal solution for trajectory tracking in complex partially observable environments.}
+  }
+
+@article{vora2023welfare,
+  title={Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs},
+  author={Vora, Manav and Thangeda, Pranay and Grussing, Michael N and Ornik, Melkior},
+  journal={IEEE Control Systems Letters},
+  volume={7},
+  pages={1736--1741},
+  year={2023},
+  publisher={IEEE},
+  pdf={lcss.pdf},
+  preview={ttfr_vs_budget.png},
+  abstract={ Partially Observable Markov Decision Processes
+(POMDPs) provide an efficient way to model real-world se-
+quential decision making processes. Motivated by the problem
+of maintenance and inspection of a group of infrastructure
+components with independent dynamics, this paper presents
+an algorithm to find the optimal policy for a multi-component
+budget-constrained POMDP. We first introduce a budgeted-
+POMDP model (b-POMDP) which enables us to find the optimal
+policy for a POMDP while adhering to budget constraints. Next,
+we prove that the value function or maximal collected reward
+for a special class of b-POMDPs is a concave function of the
+budget for the finite horizon case. Our second contribution
+is an algorithm to calculate the optimal policy for a multi-
+component budget-constrained POMDP by finding the optimal
+budget split among the individual component POMDPs. The
+optimal budget split is posed as a welfare maximization problem
+and the solution is computed by exploiting the concavity of the
+value function. We illustrate the effectiveness of the proposed
+algorithm by proposing a maintenance and inspection policy
+for a group of real-world infrastructure components with
+different deterioration dynamics, inspection and maintenance
+costs. We show that the proposed algorithm vastly outperforms
+the policies currently used in practice.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{vora2024solving,
+  title={Solving Truly Massive Budgeted Monotonic POMDPs with Oracle-Guided Meta-Reinforcement Learning},
+  author={Vora, Manav and Grussing, Michael N and Ornik, Melkior},
+  journal={arXiv preprint arXiv:2408.07192},
+  year={2024},
+  pdf={ijcai.pdf},
+  preview={ijcai_arch.png},
+  abstract={ Monotonic Partially Observable Markov Decision Processes
+ (POMDPs), where the system state progressively decreases
+ until a restorative action is performed, can be used to model
+ sequential repair problems effectively. This paper considers
+ the problem of solving budget-constrained multi-component
+ monotonic POMDPs, where a finite budget limits the max
+imal number of restorative actions. For a large number of
+ components, solving such a POMDP using current methods
+ is computationally intractable due to the exponential growth
+ in the state space with an increasing number of components.
+ To address this challenge, we propose a two-step approach.
+ Since the individual components of a budget-constrained
+ multi-component monotonic POMDP are only connected via
+ the shared budget, we first approximate the optimal budget
+ allocation among these components using an approximation
+ of each component POMDP’s optimal value function which
+ is obtained through a random forest model. Subsequently, we
+ introduce an oracle-guided meta-trained Proximal Policy Op
+timization (PPO) algorithm to solve each of the independent
+ budget-constrained single-component monotonic POMDPs.
+ The oracle policy is obtained by performing value iteration
+ on the corresponding monotonic Markov Decision Process
+ (MDP). This two-step method provides scalability in solv
+ing truly massive multi-component monotonic POMDPs. To
+ demonstrate the efficacy of our approach, we consider a real
+world maintenance scenario that involves inspection and re
+pair of an administrative building by a team of agents within
+ a maintenance budget. Our results show that the proposed
+ method significantly improves average component survival
+ times compared to baseline policies, thereby highlighting its
+ potential for practical applications in large-scale maintenance
+ problems. Finally, we perform a computational complexity
+ analysis for a varying number of components to show the
+ scalability of the proposed approach.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@article{vora2024capacity,
+  title={Capacity-Aware Planning and Scheduling in Budget-Constrained Monotonic MDPs: A Meta-RL Approach},
+  author={Vora, Manav and Shomorony, Ilan and Ornik, Melkior},
+  journal={arXiv preprint arXiv:2410.21249},
+  year={2024},
+  pdf={icaps.pdf},
+  preview={arch_icaps_final.png},
+  abstract={ Many real-world sequential repair problems can be effec
+tively modeled using monotonic Markov Decision Processes
+ (MDPs), where the system state stochastically decreases and
+ can only be increased by performing a restorative action.
+ This work addresses the problem of solving multi-component
+ monotonic MDPs with both budget and capacity constraints.
+ The budget constraint limits the total number of restora
+tive actions and the capacity constraint limits the number
+ of restorative actions that can be performed simultaneously.
+ While prior methods dealt with budget constraints, capacity
+ constraints introduce an additional complexity in the multi
+component action space that results in a combinatorial op
+timization problem. Including capacity constraints in prior
+ methods leads to an exponential increase in computational
+ complexity as the number of components in the MDP grows.
+ We propose a two-step planning approach to address this
+ challenge. First, we partition the components of the multi
+component MDP into groups, where the number of groups
+ is determined by the capacity constraint. We achieve this
+ partitioning by solving a Linear Sum Assignment Problem
+ (LSAP), which groups components to maximize the diversity
+ in the properties of their transition probabilities. Each group
+ is then allocated a fraction of the total budget proportional
+ to its size. This partitioning effectively decouples the large
+ multi-component MDP into smaller subproblems, which are
+ computationally feasible because the capacity constraint is
+ simplified and the budget constraint can be addressed us
+ing existing methods. Subsequently, we use a meta-trained
+ PPOagenttoobtain an approximately optimal policy for each
+ group. To validate our approach, we apply it to the problem
+ of scheduling repairs for a large group of industrial robots,
+ constrained by a limited number of repair technicians and a
+ total repair budget. Our results demonstrate that the proposed
+ method outperforms baseline approaches in terms of maxi
+mizing the average uptime of the robot swarm, particularly
+ for large swarm sizes. Lastly, we confirm the scalability of
+ our approach through a computational complexity analysis
+ across varying numbers of robots and repair technicians.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{puthumanaillam2024assured,
+  title={Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu},
+  author={Puthumanaillam*, Gokul and Vora*, Manav Ketan and Shafa, Taha and Li, Yangge and Ornik, Melkior and Mitra, Sayan},
+  booktitle={AIAA SCITECH 2024 Forum},
+  pages={1168},
+  year={2024},
+  pdf={aiaa.pdf},
+  preview={arch.png},
+  abstract={ This paper introduces a novel approach to verification of neural network controlled systems,
+ combiningthecapabilities of the nnenumframeworkwiththeVersetoolkit. Addressingacritical
+ gap in the traditional verification process which often does not include the system dynamics
+ analysis while computing the neural network outputs, our integrated methodology enhances the
+ precision and safety of decision-making in complex dynamical systems. By iteratively verifying
+ neural network decisions and propagating system states, we maintain an accurate representation
+ of the system's behavior over time, a vital aspect in ensuring operational safety.
+ Our approach is exemplified through the verification of the neural network controlled
+ Airborne Collision Avoidance System for Unmanned Aircraft (ACAS Xu). We demonstrate that
+ the integration of nnenum and Verse not only accurately computes reachable sets for the UAS
+ but also effectively handles the inherent complexity and nonlinearity of the system. The resulting
+ analysis provides a nuanced understanding of the system's behavior under varying operational
+ conditions and interactions with other agents, such as intruder aircraft. The comprehensive
+ simulations conducted as part of this study reveal the robustness of our approach, validating
+ its effectiveness in verifying the safety and reliability of learned controllers. Furthermore, the
+ scalability and adaptability of our methodology suggest its broader applicability in various
+ autonomous systems requiring rigorous safety verification.}
 }
