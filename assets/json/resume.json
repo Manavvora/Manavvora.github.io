@@ -34,7 +34,7 @@
       "url": "",
       "startDate": "2022-08-15",
       "endDate": "Present",
-      "summary": "I am a researcher in the field of optimal planning and decision-making. I am passionate about developing efficient and scalable algorithms for massive multi-agent systems and robotics.",
+      "summary": "I am a researcher in the field of optimal planning and decision-making in stochastic and constrained environments. My current research focuses on developing efficient and scalable algorithms for massive multi-agent systems and robotics.",
       "highlights": []
     }
   ],
@@ -48,7 +48,7 @@
       "area": "Robotics",
       "studyType": "PhD",
       "startDate": "2022-08",
-      "endDate": "2027-05 (Expected)",
+      "endDate": "Present",
       "score": "GPA: 3.81/4.0",
       "courses": ["Deep Generative Models", "Formal Methods in Robotics", "Reinforcement Learning", "Optimal Control", "Advanced Robotics", "Computer Vision", "Estimation of Dynamical Systems"]
     },
@@ -133,67 +133,50 @@
       "summary": ""
     }
   ],
-  "skills": [
+  "Technical Skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
+      "level": "",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "C++", "C", "Python", "Julia", "MATLAB", "Bash"
+      ]
+    },
+    {
+      "name": "Libraries & Frameworks",
+      "level": "",
+      "icon": "fa-solid fa-cogs",
+      "keywords": [
+        "PyTorch", "TensorFlow", "Keras", "OpenCV", "OpenAI Gym", "ROS/ROS2", "Gazebo", "Simulink", "Git"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
-      "language": "English",
+      "language": "Hindi",
       "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Gujarati",
+      "fluency": "Native Speaker",
       "icon": ""
     }
   ],
   "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Professor Melkior Ornik",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Ph.D. advisor"
     }
   ],
   "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
   ]
 }
