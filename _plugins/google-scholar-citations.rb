@@ -51,20 +51,25 @@ module Jekyll
 
           if !description_meta.empty?
             cited_by_text = description_meta[0]['content']
-            matches = cited_by_text.match(/Cited by (\d+[,\d]*)/)
+            # Remove common invisible Unicode control characters:
+            clean_text = cited_by_text.gsub(/[\u200E\u200F\u202A-\u202E]/, '')
+            # Use a regex that tolerates extra whitespace and punctuation before the number:
+            matches = clean_text.match(/Cited\s*by[^\d]*(\d+)/i)
 
             if matches
-              citation_count = matches[1].sub(",", "").to_i
+              citation_count = matches[1].gsub(",", "").to_i
             end
 
           elsif !og_description_meta.empty?
             cited_by_text = og_description_meta[0]['content']
-            matches = cited_by_text.match(/Cited by (\d+[,\d]*)/)
+            clean_text = cited_by_text.gsub(/[\u200E\u200F\u202A-\u202E]/, '')
+            matches = clean_text.match(/Cited\s*by[^\d]*(\d+)/i)
 
             if matches
-              citation_count = matches[1].sub(",", "").to_i
+              citation_count = matches[1].gsub(",", "").to_i
             end
           end
+
 
         citation_count = Helpers.number_to_human(citation_count, :format => '%n%u', :precision => 2, :units => { :thousand => 'K', :million => 'M', :billion => 'B' })
 
