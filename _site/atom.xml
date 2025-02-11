@@ -4,7 +4,7 @@
  <title>blank</title>
  <link href="http://0.0.0.0:8080/atom.xml" rel="self"/>
  <link href="http://0.0.0.0:8080/"/>
- <updated>2025-02-10T21:38:48+00:00</updated>
+ <updated>2025-02-11T02:44:22+00:00</updated>
  <id>http://0.0.0.0:8080</id>
  <author>
    <name></name>
@@ -145,7 +145,7 @@ Content 2
 
 &lt;p&gt;With this you can generate visualizations like:&lt;/p&gt;
 
-&lt;ul id=&quot;log&quot; class=&quot;tab&quot; data-tab=&quot;4e799392-4898-4bef-ba9f-10a57c31dbd4&quot; data-name=&quot;log&quot;&gt;
+&lt;ul id=&quot;log&quot; class=&quot;tab&quot; data-tab=&quot;7c45f2e1-6bcc-4977-9ab9-e4d928287def&quot; data-name=&quot;log&quot;&gt;
   
       &lt;li class=&quot;active&quot; id=&quot;log-php&quot;&gt;
           &lt;a href=&quot;#&quot;&gt;php &lt;/a&gt;
@@ -160,7 +160,7 @@ Content 2
       &lt;/li&gt;
   
 &lt;/ul&gt;
-&lt;ul class=&quot;tab-content&quot; id=&quot;4e799392-4898-4bef-ba9f-10a57c31dbd4&quot; data-name=&quot;log&quot;&gt;
+&lt;ul class=&quot;tab-content&quot; id=&quot;7c45f2e1-6bcc-4977-9ab9-e4d928287def&quot; data-name=&quot;log&quot;&gt;
   
       &lt;li class=&quot;active&quot;&gt;
 &lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;var_dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;hello&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -184,7 +184,7 @@ Content 2
 
 &lt;h2 id=&quot;another-example&quot;&gt;Another example&lt;/h2&gt;
 
-&lt;ul id=&quot;data-struct&quot; class=&quot;tab&quot; data-tab=&quot;b93be9ee-fcd2-4de3-9dba-821d93c0b10e&quot; data-name=&quot;data-struct&quot;&gt;
+&lt;ul id=&quot;data-struct&quot; class=&quot;tab&quot; data-tab=&quot;036320fb-20d2-4575-a87f-84e209c6b50d&quot; data-name=&quot;data-struct&quot;&gt;
   
       &lt;li class=&quot;active&quot; id=&quot;data-struct-yaml&quot;&gt;
           &lt;a href=&quot;#&quot;&gt;yaml &lt;/a&gt;
@@ -195,7 +195,7 @@ Content 2
       &lt;/li&gt;
   
 &lt;/ul&gt;
-&lt;ul class=&quot;tab-content&quot; id=&quot;b93be9ee-fcd2-4de3-9dba-821d93c0b10e&quot; data-name=&quot;data-struct&quot;&gt;
+&lt;ul class=&quot;tab-content&quot; id=&quot;036320fb-20d2-4575-a87f-84e209c6b50d&quot; data-name=&quot;data-struct&quot;&gt;
   
       &lt;li class=&quot;active&quot;&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -217,7 +217,7 @@ Content 2
 
 &lt;h2 id=&quot;tabs-for-something-else&quot;&gt;Tabs for something else&lt;/h2&gt;
 
-&lt;ul id=&quot;something-else&quot; class=&quot;tab&quot; data-tab=&quot;7d72da60-e64b-44c6-89a5-c972f05fd4cb&quot; data-name=&quot;something-else&quot;&gt;
+&lt;ul id=&quot;something-else&quot; class=&quot;tab&quot; data-tab=&quot;fb3bebaf-fe88-4259-b9f0-10112b11dfde&quot; data-name=&quot;something-else&quot;&gt;
   
       &lt;li class=&quot;active&quot; id=&quot;something-else-text&quot;&gt;
           &lt;a href=&quot;#&quot;&gt;text &lt;/a&gt;
@@ -232,7 +232,7 @@ Content 2
       &lt;/li&gt;
   
 &lt;/ul&gt;
-&lt;ul class=&quot;tab-content&quot; id=&quot;7d72da60-e64b-44c6-89a5-c972f05fd4cb&quot; data-name=&quot;something-else&quot;&gt;
+&lt;ul class=&quot;tab-content&quot; id=&quot;fb3bebaf-fe88-4259-b9f0-10112b11dfde&quot; data-name=&quot;something-else&quot;&gt;
   
       &lt;li class=&quot;active&quot;&gt;
 &lt;p&gt;Regular text&lt;/p&gt;
