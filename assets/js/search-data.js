@@ -417,16 +417,23 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-received-uiuc-ae-department-fellowship-mortar-board",
+          title: 'Received UIUC AE Department Fellowship :mortar_board:',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-welfare-maximization-algorithm-for-solving-budget-constrained-pomdps-accepted-in-ieee-lcss-presentation-at-ieee-cdc-2023-confetti-ball",
+          title: 'Welfare Maximization Algorithm for Solving Budget-Constrained POMDPs accepted in IEEE LCSS (Presentation at...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-received-ieee-cdc-2023-travel-award-airplane",
+          title: 'Received IEEE CDC 2023 Travel Award! :airplane:',
+          description: "",
+          section: "News",},{id: "news-nncs-verification-accepted-at-aiaa-scitech-2024-tada",
+          title: 'NNCS Verification accepted at AIAA SciTech 2024 :tada:',
+          description: "",
+          section: "News",},{id: "news-comtraq-mpc-accepted-at-iros-2024-oral-robot",
+          title: 'ComTraQ-MPC accepted at IROS 2024 (Oral) :robot:',
+          description: "",
+          section: "News",},{id: "news-cleared-my-ph-d-qualifying-exam-tada",
+          title: 'Cleared my Ph.D. Qualifying Exam! :tada:',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -493,13 +500,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/manav-vora-10327a185", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
         id: 'social-scholar',
