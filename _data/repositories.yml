@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Manavvora
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Manavvora/ComTraq-MPC
+  - JuliaPOMDP/POMDPs.jl
+  - Manavvora/Vision-based-Spacecraft-Trajectory-Estimation
+  - Manavvora/RiP_Planner
+  - Manavvora/Delivery-Drone-Control
+  - Manavvora/Path_Planning
+  - Manavvora/Deep-Learning
+  - Manavvora/ROS2-Path-Planning-and-Maze-Solving

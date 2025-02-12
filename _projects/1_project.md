@@ -1,81 +1,73 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Capacity and Resource-Aware Scalable Meta-RL
+description:
+img: assets/img/publication_preview/arch_icaps_final.png
 importance: 1
-category: work
-related_publications: true
+category: research
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<!-- Brief Summary -->
+<p>
+Many real-world sequential repair problems can be effectively modeled using monotonic MDPs with budget and capacity constraints. 
+We propose partitioning the multi-component MDP into smaller groups to handle the combinatorial complexity introduced by capacity limits. 
+A meta-trained PPO agent then provides near-optimal repair policies for each group. 
+Experiments on a large robot fleet confirm our method’s performance and scalability over baselines.
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<p>
+We will now discuss our proposed approach to obtain the approximately optimal policy for a budget and capacity-constrained multi-component monotonic MDP. Our approach follows a two-step process, as illustrated by the architectural overview below. In the first step, we partition the large multi-component MDP into <em>r</em> groups by solving a Linear Sum Assignment Problem (LSAP) that maximizes diversity within each group. The total budget is then allocated proportionally based on group size. In the second step, a meta-trained reinforcement learning agent derives an approximately optimal policy for each group.
+</p>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm">
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/arch_icaps_final.png" title="Architectural Overview" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+Figure: Architectural overview of the proposed approach.
 </div>
+
+<p>
+For large scenarios—such as the one with 1000 robots and 300 repair technicians—<code>GUROBI</code> produces poor results within the provided time frame, as shown in the figure below. Even with extended runtimes, ILP solvers fail to find high-quality solutions, which highlights the scalability challenges of traditional methods. In contrast, our LSAP-based and meta-PPO approach produces good results.
+</p>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm">
+    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_1000_300.png" title="Performance vs. Baselines" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+Figure: Performance comparison against baselines for 1000 robots and 300 repair technicians.
+</div>
 
-{% endraw %}
+<p>
+The next figure depicts the computational complexity of our approach as the number of robots increases. The log-log plot demonstrates linear scalability with respect to the swarm size.
+</p>
+
+<div class="row">
+  <div class="col-sm">
+    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_comp_complexity.png" title="Computational Complexity Plot" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+Figure: Computational complexity plot.
+</div>
+
+<p>
+Additionally, the heatmap below captures the variation in computational time for different combinations of <em>(n, r)</em> pairs. It shows that the overall computational complexity is more sensitive to the number of robots than to the number of repair technicians.
+</p>
+
+<div class="row">
+  <div class="col-sm">
+    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_heatmap.png" title="Heatmap of Complexity" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+Figure: Heatmap of computational complexity across different (n, r) pairs.
+</div>
+
+<p>
+<strong>Conclusions:</strong> In this paper, we present a computationally efficient and scalable algorithm for solving large budget and capacity-constrained multi-component monotonic MDPs. By partitioning the MDP using an LSAP approach and employing a meta-PPO agent, our method outperforms non-partitioning baselines and scales linearly with the number of robots. Future work will extend the algorithm's capabilities to scenarios involving hierarchical budget constraints alongside capacity constraints.
+</p>
