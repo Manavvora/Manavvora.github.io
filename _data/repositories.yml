@@ -4,9 +4,11 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - Manavvora/ComTraq-MPC
+  - gokulp01/ComTraq-MPC
   - JuliaPOMDP/POMDPs.jl
   - Manavvora/Vision-based-Spacecraft-Trajectory-Estimation
+  - Manavvora/Deep-RL-Traffic-Light-Control
+  - Manavvora/Lunar_RL
   - Manavvora/RiP_Planner
   - Manavvora/Delivery-Drone-Control
   - Manavvora/Path_Planning

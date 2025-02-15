@@ -1,73 +1,59 @@
 ---
 layout: page
-title: Capacity and Resource-Aware Scalable Meta-RL
+title: Deep RL for Intelligent Traffic Light Control
 description:
-img: assets/img/publication_preview/arch_icaps_final.png
+img: assets/img/traffic_light/Simulation_ppo.gif
 importance: 1
-category: research
+category:
 related_publications: false
 ---
 
-<!-- Brief Summary -->
-<p>
-Many real-world sequential repair problems can be effectively modeled using monotonic MDPs with budget and capacity constraints. 
-We propose partitioning the multi-component MDP into smaller groups to handle the combinatorial complexity introduced by capacity limits. 
-A meta-trained PPO agent then provides near-optimal repair policies for each group. 
-Experiments on a large robot fleet confirm our method’s performance and scalability over baselines.
-</p>
+## The Environment
 
-<p>
-We will now discuss our proposed approach to obtain the approximately optimal policy for a budget and capacity-constrained multi-component monotonic MDP. Our approach follows a two-step process, as illustrated by the architectural overview below. In the first step, we partition the large multi-component MDP into <em>r</em> groups by solving a Linear Sum Assignment Problem (LSAP) that maximizes diversity within each group. The total budget is then allocated proportionally based on group size. In the second step, a meta-trained reinforcement learning agent derives an approximately optimal policy for each group.
-</p>
+We use the **SUMO Traffic Simulator** to model our intersection. Each simulation episode runs for **5400 steps**, and each step is **1 second**. Vehicles are generated following a *Weibull distribution*. For each generated vehicle, the source and destination arms are chosen randomly.
+
+For the **high-traffic scenario**, we have:
+- **1000 cars** approaching the intersection from each arm (evenly distributed).
+- **75%** of these vehicles go straight.
+- The remaining **25%** turn either left or right.
+
+Below is an image illustrating the intersection we are modeling:
 
 <div class="row">
-  <div class="col-sm">
-    {% include figure.liquid loading="eager" path="assets/img/publication_preview/arch_icaps_final.png" title="Architectural Overview" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/traffic_light/traffic_intersection.png" title="Intersection Layout" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-Figure: Architectural overview of the proposed approach.
+  Intersection Layout
 </div>
 
-<p>
-For large scenarios—such as the one with 1000 robots and 300 repair technicians—<code>GUROBI</code> produces poor results within the provided time frame, as shown in the figure below. Even with extended runtimes, ILP solvers fail to find high-quality solutions, which highlights the scalability challenges of traditional methods. In contrast, our LSAP-based and meta-PPO approach produces good results.
-</p>
+---
+
+## Comparing DQN and PPO
+
+We compare two Deep Reinforcement Learning algorithms: **DQN** and **PPO**.
 
 <div class="row">
-  <div class="col-sm">
-    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_1000_300.png" title="Performance vs. Baselines" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/traffic_light/Simulation_dqn.gif" title="DQN-based traffic light control" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/traffic_light/Simulation_ppo.gif" title="PPO-based traffic light control" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-Figure: Performance comparison against baselines for 1000 robots and 300 repair technicians.
+  DQN (left) vs. PPO (right) traffic light control simulations.
 </div>
 
-<p>
-The next figure depicts the computational complexity of our approach as the number of robots increases. The log-log plot demonstrates linear scalability with respect to the swarm size.
-</p>
+**Observations**:  
+PPO achieves a shorter average delay **much faster** than DQN. Over time, however, both algorithms ultimately converge to **similar average delay values** by the end of training.
 
 <div class="row">
-  <div class="col-sm">
-    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_comp_complexity.png" title="Computational Complexity Plot" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/traffic_light/avg_delay.png" title="Average Delay Comparison" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-Figure: Computational complexity plot.
+  Average delay evolution during training.
 </div>
-
-<p>
-Additionally, the heatmap below captures the variation in computational time for different combinations of <em>(n, r)</em> pairs. It shows that the overall computational complexity is more sensitive to the number of robots than to the number of repair technicians.
-</p>
-
-<div class="row">
-  <div class="col-sm">
-    {% include figure.liquid loading="eager" path="assets/img/icaps/icaps_heatmap.png" title="Heatmap of Complexity" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-Figure: Heatmap of computational complexity across different (n, r) pairs.
-</div>
-
-<p>
-<strong>Conclusions:</strong> In this paper, we present a computationally efficient and scalable algorithm for solving large budget and capacity-constrained multi-component monotonic MDPs. By partitioning the MDP using an LSAP approach and employing a meta-PPO agent, our method outperforms non-partitioning baselines and scales linearly with the number of robots. Future work will extend the algorithm's capabilities to scenarios involving hierarchical budget constraints alongside capacity constraints.
-</p>
