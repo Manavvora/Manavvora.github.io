@@ -407,51 +407,31 @@ ninja.data = [{
           section: "News",},{id: "news-cleared-my-ph-d-qualifying-exam-tada",
           title: 'Cleared my Ph.D. Qualifying Exam! :tada:',
           description: "",
-          section: "News",},{id: "projects-capacity-and-resource-aware-scalable-meta-rl",
-          title: 'Capacity and Resource-Aware Scalable Meta-RL',
+          section: "News",},{id: "projects-deep-rl-for-intelligent-traffic-light-control",
+          title: 'Deep RL for Intelligent Traffic Light Control',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-rl-based-control-of-a-lunar-lander",
+          title: 'RL-based Control of a Lunar Lander',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-reachability-based-risk-aware-planner",
+          title: 'Reachability Based Risk-Aware Planner',
+          description: "A path planning algorithm that generates safe trajectories by minimizing risk around obstacles.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-vision-based-spacecraft-trajectory-estimation-using-structure-from-motion",
+          title: 'Vision-based Spacecraft Trajectory Estimation Using Structure from Motion',
+          description: "3D reconstruction of asteroid Bennu&#39;s surface and spacecraft trajectory estimation using SfM techniques.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-ros2-maze-solving-and-mapping",
+          title: 'ROS2 Maze Solving and Mapping',
+          description: "ROS2-based course project on localization, navigation, and path planning for a differential drive robot in a maze.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
