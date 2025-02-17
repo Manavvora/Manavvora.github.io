@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: >
   Ph.D. Candidate at 
   <a href="https://mornik.web.illinois.edu/research/group/">LEADCAT, UIUC</a>
