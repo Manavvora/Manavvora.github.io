@@ -1,5 +1,4 @@
 ---
-layout: post
 date: 2025-10-19
 date_label: Oct 2025
 inline: true

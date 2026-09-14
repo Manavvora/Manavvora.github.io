@@ -1,5 +1,4 @@
 ---
-layout: post
 date: 2023-12-22
 inline: true
 category: paper

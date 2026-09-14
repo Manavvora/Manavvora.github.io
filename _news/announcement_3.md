@@ -1,5 +1,4 @@
 ---
-layout: post
 date: 2023-09-15
 inline: true
 category: award

@@ -1,5 +1,4 @@
 ---
-layout: post
 date: 2026-04-20
 date_label: Apr 2026
 inline: true
