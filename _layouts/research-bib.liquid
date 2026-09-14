@@ -1,0 +1,46 @@
+<article id="{{ entry.key }}" class="publication" data-publication data-tags="{{ entry.tags | downcase | replace: ',', ' ' }}">
+  <div class="publication-venue">
+    {% if entry.venue %}{{ entry.venue }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% else %}{{ entry.journal }}{% endif %}{% if entry.year %}<br>{{ entry.year }}{% endif %}
+  </div>
+  <div>
+    <h3>{{ entry.title }}</h3>
+    <p class="authors">
+      {% for author in entry.author_array %}
+        {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
+        {% assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' %}
+        {% if forloop.first == false %}{% if forloop.last %} and {% else %}, {% endif %}{% endif %}
+        {% if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first %}<strong>{{ author.first }} {{ author_last_html }}</strong>{% else %}{{ author.first }} {{ author_last_html }}{% endif %}
+      {% endfor %}
+    </p>
+    <div class="publication-details">
+      {% if entry.booktitle %}<span>{{ entry.booktitle }}</span>{% elsif entry.journal %}<span>{{ entry.journal }}</span>{% endif %}
+      {% if entry.distinction %}<span class="distinction">{{ entry.distinction }}</span>{% endif %}
+      {% if entry.note %}<span>{{ entry.note }}</span>{% endif %}
+    </div>
+    {% if entry.tags %}
+      <ul class="tag-list" aria-label="Research areas">
+        {% assign tags = entry.tags | split: ',' %}
+        {% for tag in tags %}
+          {% assign clean_tag = tag | strip %}
+          <li class="tag tag--{{ clean_tag }}">{% case clean_tag %}{% when 'reinforcement-learning' %}RL{% when 'resource-constraints' %}Resource-aware{% when 'information-sensing' %}Information &amp; Sensing{% when 'control-safety' %}Control &amp; Safety{% when 'generative-models' %}Generative Models{% else %}{{ clean_tag | replace: '-', ' ' }}{% endcase %}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <p class="entry-links">
+      {% if entry.pdf %}<a class="resource-link" href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">Paper{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.arxiv %}<a class="resource-link" href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.openreview %}<a class="resource-link" href="{{ entry.openreview }}">OpenReview{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.website %}<a class="resource-link" href="{{ entry.website }}">Project{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.code %}<a class="resource-link" href="{{ entry.code }}">Code{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.video %}<a class="resource-link" href="{{ entry.video }}">Video{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.doi %}<a class="resource-link" href="https://doi.org/{{ entry.doi }}">DOI{% include external-arrow.liquid %}</a>{% endif %}
+    </p>
+    <details class="bibtex-details">
+      <summary>BibTeX</summary>
+      <div class="bibtex-block">
+        <button class="bibtex-copy" type="button" data-copy-bibtex aria-live="polite">Copy</button>
+        <pre><code data-bibtex-source>{{ entry.bibtex | hideCustomBibtex | escape }}</code></pre>
+      </div>
+    </details>
+  </div>
+</article>

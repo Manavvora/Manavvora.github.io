@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>{% if page.section == 'about' %}{{ site.data.research_identity.identity.name }} — Research{% else %}{{ page.title | capitalize }} · {{ site.data.research_identity.identity.name }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.research_identity.identity.statement }}{% endif %}">
+    <meta name="author" content="{{ site.data.research_identity.identity.name }}">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.data.research_identity.identity.name }} · Research">
+    <meta property="og:description" content="{{ site.data.research_identity.identity.statement }}">
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,opsz,wght@0,6..12,400..700;1,6..12,400..700&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("research-theme");
+          var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {}
+      }());
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body data-section="{{ page.section }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="frame header-frame">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Manav Vora — home">MV</a>
+        {% assign active_section = page.section | default: 'about' %}
+        <nav class="primary-nav" aria-label="Primary">
+          <div class="ordered-nav" data-ordered-nav>
+            {% if active_section == 'about' %}<a class="nav-link is-active" href="{{ '/' | relative_url }}" aria-current="page" data-section-link="about">About</a>{% endif %}
+            {% if active_section == 'research' %}<a class="nav-link is-active" href="{{ '/research/' | relative_url }}" aria-current="page" data-section-link="research">Research</a>{% endif %}
+            {% if active_section == 'experience' %}<a class="nav-link is-active" href="{{ '/experience/' | relative_url }}" aria-current="page" data-section-link="experience">Experience</a>{% endif %}
+            {% if active_section == 'projects' %}<a class="nav-link is-active" href="{{ '/projects/' | relative_url }}" aria-current="page" data-section-link="projects">Projects</a>{% endif %}
+            {% unless active_section == 'about' %}<a class="nav-link" href="{{ '/' | relative_url }}" data-section-link="about">About</a>{% endunless %}
+            {% unless active_section == 'research' %}<a class="nav-link" href="{{ '/research/' | relative_url }}" data-section-link="research">Research</a>{% endunless %}
+            {% unless active_section == 'experience' %}<a class="nav-link" href="{{ '/experience/' | relative_url }}" data-section-link="experience">Experience</a>{% endunless %}
+            {% unless active_section == 'projects' %}<a class="nav-link" href="{{ '/projects/' | relative_url }}" data-section-link="projects">Projects</a>{% endunless %}
+          </div>
+        </nav>
+        <div class="utility-links" aria-label="Professional links">
+          <a class="utility-icon" href="{{ site.data.research_identity.identity.cv | relative_url }}" aria-label="Curriculum vitae" title="Curriculum vitae">{% include icon.liquid name="cv" %}</a>
+          <a class="utility-icon" href="{{ site.data.research_identity.identity.scholar }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.liquid name="scholar" %}</a>
+          <a class="utility-icon" href="{{ site.data.research_identity.identity.github }}" aria-label="GitHub" title="GitHub">{% include icon.liquid name="github" %}</a>
+          <a class="utility-icon utility-icon--optional" href="{{ site.data.research_identity.identity.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.liquid name="linkedin" %}</a>
+          <a class="utility-icon utility-icon--optional" href="{{ site.data.research_identity.identity.email }}" aria-label="Email" title="Email">{% include icon.liquid name="mail" %}</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch color theme">
+            <span class="theme-icon theme-icon--sun">{% include icon.liquid name="sun" %}</span>
+            <span class="theme-icon theme-icon--moon">{% include icon.liquid name="moon" %}</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="frame site-main">
+      {% if page.section == 'about' %}
+        <section class="intro" aria-labelledby="intro-name">
+          <div class="intro-copy">
+            <p class="eyebrow">Multi-agent learning · Robotics · Autonomy</p>
+            <h1 id="intro-name">{{ site.data.research_identity.identity.name }}</h1>
+            <h2 class="intro-headline">Scalable multi-agent learning &amp; decision-making.</h2>
+            <p class="hero-context">Ph.D. candidate in Aerospace Engineering at <a href="https://illinois.edu/"><img class="inline-logo inline-logo--illinois" src="{{ '/assets/img/logos/illinois-mark.svg' | relative_url }}" alt="Illinois">UIUC</a>, advised by Prof. Melkior Ornik.</p>
+            <p class="research-statement">I develop scalable learning and decision-making methods for autonomous multi-agent systems operating under resource, information, communication, and sensing constraints.</p>
+            <p class="research-prose">My research connects scalable coordination and communication, resource-aware planning under budget and capacity limits, and information-efficient robotics. Current work includes sparse multi-agent diffusion, heterogeneous-sensor search and rescue, Nash-bargaining foundation models for conflict resolution, and occlusion-aware trajectory prediction.</p>
+            <p class="hero-context">I spent Summer 2026 at <a href="https://www.bell-labs.com/"><img class="inline-logo inline-logo--bell" src="{{ '/assets/img/logos/nokia-bell-labs.svg' | relative_url }}" alt="Nokia Bell Labs">Nokia Bell Labs</a> as an ML/AI Research Intern and Summer 2025 at <a href="https://rivian.com/"><img class="inline-logo inline-logo--rivian" src="{{ '/assets/img/logos/rivian-mark.svg' | relative_url }}" alt="Rivian">Rivian</a> as a Machine Learning Intern. Before UIUC, I studied Aerospace Engineering at <a href="https://www.iitb.ac.in/"><img class="inline-logo inline-logo--iitb" src="{{ '/assets/img/logos/iitb-institutional.svg' | relative_url }}" alt="IIT Bombay">IIT Bombay</a>.</p>
+            <p class="intro-links">
+              <a class="hero-utility hero-utility--cv" href="{{ site.data.research_identity.identity.cv | relative_url }}">{% include icon.liquid name="cv" %}<span>CV</span></a>
+              <a class="hero-utility hero-utility--scholar" href="{{ site.data.research_identity.identity.scholar }}">{% include icon.liquid name="scholar" %}<span>Scholar</span></a>
+              <a class="hero-utility hero-utility--github" href="{{ site.data.research_identity.identity.github }}">{% include icon.liquid name="github" %}<span>GitHub</span></a>
+              <a class="hero-utility hero-utility--linkedin" href="{{ site.data.research_identity.identity.linkedin }}">{% include icon.liquid name="linkedin" %}<span>LinkedIn</span></a>
+              <a class="hero-utility hero-utility--email" href="{{ site.data.research_identity.identity.email }}">{% include icon.liquid name="mail" %}<span>Email</span></a>
+            </p>
+          </div>
+          <figure class="portrait">
+            <img src="{{ '/assets/img/manav-home.webp' | relative_url }}" width="800" height="1000" alt="Portrait of Manav Vora" fetchpriority="high">
+          </figure>
+        </section>
+
+        <section class="home-summary" aria-label="Selected research and news">
+          <div>
+            <div class="section-heading section-heading--compact">
+              <p class="eyebrow">Selected work</p>
+              <h2 id="selected-research">Research</h2>
+              <a href="{{ '/research/' | relative_url }}" class="text-link">All publications <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="publication-list publication-list--selected">
+              {% bibliography --query @*[featured_order=1] %}
+              {% bibliography --query @*[featured_order=2] %}
+              {% bibliography --query @*[featured_order=3] %}
+              {% bibliography --query @*[featured_order=4] %}
+            </div>
+          </div>
+          <aside id="news" class="home-news" aria-labelledby="home-news-heading">
+            <div class="section-heading section-heading--compact">
+              <p class="eyebrow">Recent</p>
+              <h2 id="home-news-heading">News</h2>
+            </div>
+            <ol class="news-list news-list--scroll">
+              {% assign newest_news = site.news | sort: "date" | reverse %}
+              {% for item in newest_news %}
+                {% assign news_icon = item.category | default: "paper" %}
+                <li class="news-item--{{ news_icon }}"><span class="news-icon" aria-hidden="true">{% include icon.liquid name=news_icon %}</span><time datetime="{{ item.date | date_to_xmlschema }}">{% if item.date_label %}{{ item.date_label }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</time><span>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+              {% endfor %}
+            </ol>
+          </aside>
+        </section>
+
+        <section class="now-section" aria-labelledby="now-heading">
+          <p class="eyebrow">Now</p>
+          <ul class="now-list">
+            <li>{% include icon.liquid name="book" %}<span><small>Currently reading</small><strong>The Man Who Solved the Market</strong></span></li>
+            <li>{% include icon.liquid name="game" %}<span><small>Currently playing</small><strong>Battlefield 6</strong></span></li>
+            <li>{% include icon.liquid name="screen" %}<span><small>Currently watching</small><strong>Slow Horses</strong></span></li>
+          </ul>
+        </section>
+
+      {% elsif page.section == 'research' %}
+        <header class="page-intro">
+          <p class="eyebrow">Publications &amp; preprints</p>
+          <h1>Scalable multi-agent learning for autonomous systems.</h1>
+          <p>I develop learning, planning, and control methods for autonomous systems operating under resource, information, communication, and sensing constraints.</p>
+        </header>
+        {% include research-threads.liquid variant="research" %}
+        <section aria-label="Filter publications">
+          <div class="ordered-filter" role="toolbar" aria-label="Research area filters" data-research-filters>
+            <button class="filter-button is-active" type="button" aria-pressed="true" data-filter="all">All</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="multi-agent">Multi-agent</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="robotics">Robotics</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="reinforcement-learning">RL</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="planning">Planning</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="pomdps">POMDPs</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="resource-constraints">Resource-aware</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="information-sensing">Info &amp; sensing</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-filter="control-safety">Control &amp; safety</button>
+          </div>
+          <p class="filter-status" aria-live="polite" data-filter-status>Showing all publications.</p>
+        </section>
+        <div class="publication-list" data-publication-list>
+          {% bibliography %}
+        </div>
+
+      {% elsif page.section == 'experience' %}
+        <header class="page-intro">
+          <p class="eyebrow">Research experience</p>
+          <h1>Work across autonomy, planning, and learning.</h1>
+          <p>Research and training spanning scalable multi-agent systems, robot control, and data-driven decision-making.</p>
+        </header>
+        <ol class="experience-list">
+          {% for item in site.data.research_identity.experience %}
+            <li class="experience-item">
+              <a href="{{ item.url }}" class="experience-logo-link"><img class="organization-logo organization-logo--large" src="{{ item.logo | relative_url }}" alt="{{ item.organization }} logo" width="96" height="64"></a>
+              <div class="experience-copy">
+                <div class="experience-meta"><h2>{{ item.organization }}</h2><time>{{ item.dates }}</time></div>
+                <p class="experience-role">{{ item.role }}</p>
+                <p>{{ item.description }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+        <aside class="recognition">
+          <p class="eyebrow">Recognition</p>
+          <p>IROS 2024 Oral Presentation (top 10% of accepted papers) · IEEE CDC Student Travel Award · UIUC Aerospace Engineering Department Fellowship (2023) · Chanakya Research Fellowship (2021)</p>
+        </aside>
+
+      {% elsif page.section == 'projects' %}
+        <header class="page-intro">
+          <p class="eyebrow">Selected research systems</p>
+          <h1>Research systems &amp; artifacts.</h1>
+          <p>A focused selection of research projects, paper implementations, and technical systems.</p>
+        </header>
+        <div class="project-list">
+          {% for project in site.data.research_identity.projects %}
+            {% include project-row.liquid project=project index=forloop.index %}
+          {% endfor %}
+        </div>
+
+      {% elsif page.section == 'news' %}
+        <header class="page-intro">
+          <p class="eyebrow">Updates</p>
+          <h1>Recent news.</h1>
+          <p>Paper acceptances, research milestones, and professional updates.</p>
+        </header>
+        <ol class="news-list news-list--full">
+          {% assign all_news = site.news | sort: "date" | reverse %}
+          {% assign news_year = "" %}
+          {% for item in all_news %}
+            {% assign item_year = item.date | date: "%Y" %}
+            {% if item_year != news_year %}<li class="news-year"><h2>{{ item_year }}</h2></li>{% assign news_year = item_year %}{% endif %}
+            {% assign news_icon = item.category | default: "paper" %}
+            <li><span class="news-icon" aria-hidden="true">{% include icon.liquid name=news_icon %}</span><time datetime="{{ item.date | date_to_xmlschema }}">{% if item.date_label %}{{ item.date_label }}{% else %}{{ item.date | date: "%b %d, %Y" }}{% endif %}</time><span>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="frame"><span>© {{ 'now' | date: "%Y" }} Manav Vora</span><a href="{{ site.data.research_identity.identity.email }}">mkvora2@illinois.edu</a></div>
+    </footer>
+    <script type="module" src="{{ '/assets/js/research-site.js' | relative_url }}"></script>
+  </body>
+</html>

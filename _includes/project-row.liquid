@@ -1,0 +1,19 @@
+<article class="project {% if include.project.image %}project--with-image{% endif %} {% if include.project.feature %}project--feature{% endif %}">
+  <div class="project-index" aria-hidden="true">0{{ include.index }}</div>
+  {% if include.project.image %}
+    <figure class="project-thumb">
+      <img src="{{ include.project.image | relative_url }}" alt="" loading="lazy">
+    </figure>
+  {% endif %}
+  <div>
+    <div class="project-title-row"><h2>{{ include.project.title }}</h2><span class="venue">{{ include.project.venue }}</span></div>
+    <p>{{ include.project.description }}</p>
+    <ul class="tag-list" aria-label="Research areas">{% for tag in include.project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    <p class="entry-links">
+      {% if include.project.paper %}<a class="resource-link" href="{% if include.project.paper contains '://' %}{{ include.project.paper }}{% else %}{{ include.project.paper | relative_url }}{% endif %}">Paper{% include external-arrow.liquid %}</a>{% endif %}
+      {% if include.project.website %}<a class="resource-link" href="{% if include.project.website contains '://' %}{{ include.project.website }}{% else %}{{ include.project.website | relative_url }}{% endif %}">Project{% include external-arrow.liquid %}</a>{% endif %}
+      {% if include.project.code %}<a class="resource-link" href="{{ include.project.code }}">Code{% include external-arrow.liquid %}</a>{% endif %}
+      {% if include.project.video %}<a class="resource-link" href="{{ include.project.video }}">Video{% include external-arrow.liquid %}</a>{% endif %}
+    </p>
+  </div>
+</article>

@@ -1,12 +1,9 @@
 ---
-layout: page
+layout: research
 title: projects
 permalink: /projects/
-description:
-nav: true
-nav_order: 3
-display_categories:
-horizontal: false
+section: projects
+description: Selected research systems and technical projects by Manav Vora.
 ---
 
 <!-- pages/projects.md -->

@@ -2,7 +2,8 @@
 layout: post
 date: 2024-08-25
 inline: true
+category: award
 related_posts: false
 ---
 
-Cleared my Ph.D. Qualifying Exam! :tada:
+Cleared the Ph.D. Qualifying Examination.

@@ -1,7 +1,9 @@
 ---
-layout: about
+layout: research
 title: about
 permalink: /
+section: about
+description: Research portfolio of Manav Vora, a Ph.D. candidate working on scalable decision-making for multi-agent systems and robotics.
 subtitle: >
   Ph.D. Candidate at 
   <a href="https://mornik.web.illinois.edu/research/group/">LEADCAT, UIUC</a>

@@ -1,4 +1,4 @@
-_site
+_site/
 .bundle
 .sass-cache
 .jekyll-cache
@@ -11,3 +11,4 @@ assets/libs/
 node_modules/
 vendor
 .idea
+scout-comm.github.io/

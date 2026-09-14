@@ -2,7 +2,8 @@
 layout: post
 date: 2023-07-11
 inline: true
+category: paper
 related_posts: false
 ---
 
-*Welfare Maximization Algorithm for Solving Budget-Constrained POMDPs* accepted in [IEEE LCSS](https://ieeexplore.ieee.org/document/10136380) (Presentation at IEEE CDC 2023) :confetti_ball:
+<em>Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs</em> was accepted in <a href="https://ieeexplore.ieee.org/document/10136380">IEEE Control Systems Letters</a> and selected for presentation at CDC 2023.

@@ -1,0 +1,108 @@
+identity:
+  name: Manav Vora
+  role: Ph.D. Candidate, Aerospace Engineering
+  institution: University of Illinois Urbana-Champaign
+  statement: I develop scalable learning and decision-making methods for autonomous multi-agent systems operating under resource, information, communication, and sensing constraints.
+  advisor: Advised by Prof. Melkior Ornik in the Learning, Autonomy, Decision, and Control (LEADCAT) Lab.
+  cv: /assets/pdf/Manav_CV_updated.pdf
+  scholar: https://scholar.google.com/citations?user=hr48LoAAAAAJ
+  github: https://github.com/Manavvora
+  linkedin: https://www.linkedin.com/in/manav-vora-10327a185/
+  email: mailto:mkvora2@illinois.edu
+
+experience:
+  - organization: Nokia Bell Labs
+    logo: /assets/img/logos/nokia-bell-labs.svg
+    role: ML/AI Research Intern
+    dates: Jun 2026 — Aug 2026
+    description: Research internship in ML/AI; project details are not public.
+    url: https://www.bell-labs.com/
+  - organization: University of Illinois Urbana-Champaign
+    logo: /assets/img/logos/illinois-mark.svg
+    role: Research Assistant · LEADCAT Lab
+    dates: Aug 2022 — Present
+    description: Research on scalable multi-agent planning, resource-constrained autonomy, and robot navigation under partial observability.
+    url: https://mornik.web.illinois.edu/research/group/
+  - organization: Rivian
+    logo: /assets/img/logos/rivian-mark.svg
+    role: Machine Learning Intern
+    dates: May 2025 — Aug 2025
+    description: Machine learning internship in Palo Alto, California.
+    url: https://rivian.com/
+  - organization: University of Pennsylvania
+    logo: /assets/img/logos/grasp.svg
+    role: Research Intern · GRASP Lab
+    dates: Apr 2021 — Feb 2022
+    description: Explored neural ODE and Lie algebra methods for robotic control and dynamics prediction.
+    url: https://www.grasp.upenn.edu/
+  - organization: Indian Institute of Technology Bombay
+    logo: /assets/img/logos/iitb-institutional.svg
+    role: B.Tech. (Honors), Aerospace Engineering · Minor in Systems and Controls Engineering
+    dates: Aug 2018 — Aug 2022
+    description: Undergraduate training in stochastic control, reinforcement learning, navigation, and motion planning.
+    url: https://www.iitb.ac.in/
+
+research_threads:
+  - title: Scalable Multi-Agent Learning
+    summary: Communication and coordination methods that remain effective as agent populations grow.
+    published: SCoUT · scalable communication and coordination
+    current: Scalable sparse multi-agent diffusion
+  - title: Resource-Aware Decision-Making
+    summary: Planning and learning under limited budgets, capacity, and partial observability.
+    published: IEEE Control Systems Letters · TMLR · IEEE RA-L
+  - title: Information-Efficient Robotics
+    summary: Robot control and planning that activate only the information and sensing needed for the task.
+    published: ComTraQ-MPC · B-COD / just-enough sensing
+    current: Heterogeneous-sensor multi-robot search and rescue
+  - title: Strategic Coordination & Prediction
+    summary: Planning and prediction when agents must resolve conflicts and act through uncertain occlusions.
+    published: Predicted Reachability · strategic planning and control
+    current: Nash-bargaining foundation models for conflict resolution · game-theoretic long-tail trajectory prediction
+
+projects:
+  - title: SCoUT
+    feature: true
+    description: Scalable communication for multi-agent reinforcement learning through utility-guided temporal grouping and counterfactual credit assignment.
+    tags: [Multi-agent, Reinforcement learning]
+    venue: RLC 2026 · Oral
+    paper: https://rlj.cs.umass.edu/2026/papers/Paper97.html
+    website: https://scout-comm.github.io/
+    code: https://github.com/scout-comm/scout
+  - title: Belief-Conditioned One-Step Diffusion
+    feature: true
+    description: Real-time trajectory planning and sensor scheduling that uses a belief-conditioned diffusion model to activate only the sensing needed.
+    tags: [Robotics, Generative models, Planning, Information & sensing]
+    venue: CoRL 2025 · Oral · Top 5%
+    paper: https://openreview.net/attachment?id=t2asRJv2SD&name=pdf
+    website: https://bcod-diffusion.github.io/
+    code: https://github.com/bcod-diffusion/bcod
+  - title: ComTraQ-MPC
+    feature: true
+    description: A meta-trained DQN–MPC framework for trajectory tracking with limited active localization updates.
+    tags: [Robotics, Reinforcement learning, Planning, Information & sensing, Control & safety]
+    venue: IROS 2024 · Oral
+    paper: /assets/pdf/iros.pdf
+    code: https://github.com/gokulp01/ComTraq-MPC
+    video: https://www.youtube.com/watch?v=evpeBYR2GPE
+  - title: Massive budgeted POMDPs
+    description: Oracle-guided meta-reinforcement learning for massive multi-component maintenance and inspection problems.
+    tags: [Planning, POMDPs, Reinforcement learning, Resource constraints]
+    venue: TMLR 2026
+    paper: https://openreview.net/forum?id=yEAnjlmliL
+  - title: Risk-aware planning
+    description: Reachability-based trajectory design that balances path length and risk around obstacles.
+    tags: [Robotics, Planning, Control]
+    venue: Research project
+    website: /projects/3_project/
+  - title: Deep RL for Intelligent Traffic Light Control
+    description: Comparison of DQN and PPO policies for intelligent signal control in a SUMO-simulated traffic intersection.
+    tags: [Reinforcement learning, Control, Traffic systems]
+    venue: Technical project
+    image: /assets/img/traffic_light/traffic_intersection.png
+    code: https://github.com/Manavvora/Deep-RL-Traffic-Light-Control
+  - title: Vision-based Spacecraft Trajectory Estimation Using Structure from Motion
+    description: 3D reconstruction of asteroid Bennu’s surface and spacecraft trajectory estimation using structure-from-motion techniques.
+    tags: [Computer vision, State estimation, Space systems]
+    venue: Technical project
+    image: /assets/img/visual_navigation/thumbnail.png
+    code: https://github.com/Manavvora/Vision-based-Spacecraft-Trajectory-Estimation

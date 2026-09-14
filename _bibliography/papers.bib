@@ -9,6 +9,10 @@
   journal={arXiv preprint arXiv:2403.14683},
   year={2024},
   pdf={llm.pdf},
+  arxiv={2403.14683},
+  tags={generative-models},
+  venue={arXiv},
+  preprint={true},
   abstract={This paper examines the challenges associated with achieving life-long superalignment in AI systems, particularly large language models (LLMs). Superalignment is a theoretical framework that aspires to ensure that superintelligent AI systems act in accordance with human values and goals. Despite its promising vision, we argue that achieving superalignment requires substantial changes in the current LLM architectures due to their inherent limitations in comprehending and adapting to the dynamic nature of these human ethics and evolving global scenarios. We dissect the challenges of encoding an ever-changing spectrum of human values into LLMs, highlighting the discrepancies between static AI models and the dynamic nature of human societies. To illustrate these challenges, we analyze two distinct examples: one demonstrates a qualitative shift in human values, while the other presents a quantifiable change. Through these examples, we illustrate how LLMs, constrained by their training data, fail to align with contemporary human values and scenarios. The paper concludes by exploring potential strategies to address and possibly mitigate these alignment discrepancies, suggesting a path forward in the pursuit of more adaptable and responsive AI systems.},
   google_scholar_id={9yKSN-GCB0IC}
 }
@@ -18,14 +22,20 @@
   booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
   title={ComTraQ-MPC: Meta-Trained DQN-MPC Integration for Trajectory Tracking with Limited Active Localization Updates}, 
   year={2024},
+  venue={IROS},
+  distinction={Oral presentation · top 10%},
   volume={},
   number={},
   pages={13592-13598},
   keywords={Location awareness;Accuracy;Trajectory tracking;Trajectory planning;Decision making;Stochastic processes;Trajectory;State estimation;Intelligent robots;Predictive control},
   doi={10.1109/IROS58592.2024.10801659},
   pdf={iros.pdf},
+  arxiv={2403.01564},
   code={https://github.com/gokulp01/ComTraq-MPC},
   video={https://www.youtube.com/watch?v=evpeBYR2GPE},
+  tags={robotics, reinforcement-learning, planning, information-sensing, control-safety},
+  oral={true},
+  peer_reviewed={true},
   preview={arch4.png},
   abstract={Optimal decision-making for trajectory tracking in partially observable, stochastic environments where the number of active localization updates -- the process by which the agent obtains its true state information from the sensors -- are limited, presents a significant challenge. Traditional methods often struggle to balance resource conservation, accurate state estimation and precise tracking, resulting in suboptimal performance. This problem is particularly pronounced in environments with large action spaces, where the need for frequent, accurate state data is paramount, yet the capacity for active localization updates is restricted by external limitations. This paper introduces ComTraQ-MPC, a novel framework that combines Deep Q-Networks (DQN) and Model Predictive Control (MPC) to optimize trajectory tracking with constrained active localization updates. The meta-trained DQN ensures adaptive active localization scheduling, while the MPC leverages available state information to improve tracking. The central contribution of this work is their reciprocal interaction: DQN's update decisions inform MPC's control strategy, and MPC's outcomes refine DQN's learning, creating a cohesive, adaptive system. Empirical evaluations in simulated and real-world settings demonstrate that ComTraQ-MPC significantly enhances operational efficiency and accuracy, providing a generalizable and approximately optimal solution for trajectory tracking in complex partially observable environments.},
   google_scholar_id={d1gkVwhDpl0C}
@@ -38,9 +48,16 @@
   volume={7},
   pages={1736--1741},
   year={2023},
+  venue={IEEE Control Systems Letters},
   publisher={IEEE},
   pdf={lcss.pdf},
+  doi={10.1109/LCSYS.2023.3280080},
+  arxiv={2303.10302},
   preview={ttfr_vs_budget.png},
+  distinction={Presented at CDC 2023},
+  tags={multi-agent, planning, pomdps, resource-constraints},
+  thesis_core={true},
+  peer_reviewed={true},
   abstract={ Partially Observable Markov Decision Processes
 (POMDPs) provide an efficient way to model real-world se-
 quential decision making processes. Motivated by the problem
@@ -69,11 +86,20 @@ google_scholar_id={u5HHmVD_uO8C}
 
 @article{vora2024solving,
   title={Solving Truly Massive Budgeted Monotonic POMDPs with Oracle-Guided Meta-Reinforcement Learning},
-  author={Vora, Manav and Grussing, Michael N and Ornik, Melkior},
-  journal={arXiv preprint arXiv:2408.07192},
-  year={2024},
-  pdf={ijcai.pdf},
+  author={Vora, Manav and Liang, Jonas and Grussing, Michael N and Ornik, Melkior},
+  journal={Transactions on Machine Learning Research},
+  year={2026},
+  venue={TMLR},
+  pdf={https://openreview.net/pdf?id=yEAnjlmliL},
+  openreview={https://openreview.net/forum?id=yEAnjlmliL},
+  arxiv={2408.07192},
+  code={https://github.com/leadcatlab/Oracle-Guided-Meta-PPO},
   preview={ijcai_arch.png},
+  tags={multi-agent, reinforcement-learning, planning, pomdps, resource-constraints},
+  selected={true},
+  featured_order={3},
+  thesis_core={true},
+  peer_reviewed={true},
   abstract={ Monotonic Partially Observable Markov Decision Processes
  (POMDPs), where the system state progressively decreases
  until a restorative action is performed, can be used to model
@@ -112,12 +138,24 @@ pair of an administrative building by a team of agents within
 }
 
 @article{vora2024capacity,
-  title={Capacity-Aware Planning and Scheduling in Budget-Constrained Monotonic MDPs: A Meta-RL Approach},
+  title={Capacity-Aware Planning and Scheduling in Budget-Constrained Multi-Agent MDPs: A Meta-RL Approach},
   author={Vora, Manav and Shomorony, Ilan and Ornik, Melkior},
-  journal={arXiv preprint arXiv:2410.21249},
-  year={2024},
-  pdf={icaps.pdf},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  volume={10},
+  number={11},
+  pages={11944--11951},
+  venue={IEEE RA-L},
+  pdf={https://ieeexplore.ieee.org/document/11192684},
+  arxiv={2410.21249},
+  doi={10.1109/LRA.2025.3617726},
+  code={https://github.com/Manavvora/RAL-2025---Capacity-and-Budget-Constrained-Multi-Agent-RL},
   preview={arch_icaps_final.png},
+  tags={multi-agent, reinforcement-learning, planning, resource-constraints},
+  selected={true},
+  featured_order={4},
+  thesis_core={true},
+  peer_reviewed={true},
   abstract={ Many real-world sequential repair problems can be effec
 tively modeled using monotonic Markov Decision Processes
  (MDPs), where the system state stochastically decreases and
@@ -165,8 +203,13 @@ mizing the average uptime of the robot swarm, particularly
   booktitle={AIAA SCITECH 2024 Forum},
   pages={1168},
   year={2024},
+  venue={AIAA SciTech},
   pdf={aiaa.pdf},
+  doi={10.2514/6.2024-1168},
+  code={https://github.com/leadcatlab/verse-nnenum-int},
   preview={arch.png},
+  tags={robotics, control-safety},
+  peer_reviewed={true},
   abstract={ This paper introduces a novel approach to verification of neural network controlled systems,
  combiningthecapabilities of the nnenumframeworkwiththeVersetoolkit. Addressingacritical
  gap in the traditional verification process which often does not include the system dynamics
@@ -185,4 +228,90 @@ mizing the average uptime of the robot swarm, particularly
  scalability and adaptability of our methodology suggest its broader applicability in various
  autonomous systems requiring rigorous safety verification.},
  google_scholar_id={u-x6o8ySG0sC}
+}
+
+@article{vora2026scout,
+  title={SCoUT: Scalable Communication via Utility-Guided Temporal Grouping in Multi-Agent Reinforcement Learning},
+  author={Vora, Manav and Puthumanaillam, Gokul and Tsukamoto, Hiroyasu and Ornik, Melkior},
+  journal={Reinforcement Learning Journal},
+  year={2026},
+  volume={7},
+  venue={RLC},
+  distinction={Oral presentation},
+  pdf={https://rlj.cs.umass.edu/2026/papers/Paper97.html},
+  arxiv={2603.04833},
+  website={https://scout-comm.github.io/},
+  code={https://github.com/scout-comm/scout},
+  tags={multi-agent, reinforcement-learning},
+  selected={true},
+  featured_order={1},
+  thesis_core={true},
+  oral={true},
+  peer_reviewed={true},
+  abstract={SCoUT uses utility-guided temporal grouping and counterfactual communication advantages to make targeted communication scalable in partially observed multi-agent reinforcement learning.}
+}
+
+@inproceedings{puthumanaillam2025bcod,
+  title={Belief-Conditioned One-Step Diffusion: Real-Time Trajectory Planning with Just-Enough Sensing},
+  author={Puthumanaillam, Gokul and Penumarti, Aditya and Vora, Manav and Padrao, Paulo and Fuentes, Jose and Bobadilla, Leonardo and Shin, Jane and Ornik, Melkior},
+  booktitle={Conference on Robot Learning},
+  year={2025},
+  volume={305},
+  pages={68--92},
+  venue={CoRL},
+  distinction={Oral presentation · top 5%},
+  pdf={https://openreview.net/attachment?id=t2asRJv2SD&name=pdf},
+  arxiv={2508.12166},
+  website={https://bcod-diffusion.github.io/},
+  code={https://github.com/bcod-diffusion/bcod},
+  tags={robotics, generative-models, planning, information-sensing},
+  selected={true},
+  featured_order={2},
+  oral={true},
+  peer_reviewed={true},
+  abstract={B-COD uses a one-step diffusion planner and belief-conditioned sensing to generate real-time trajectories while scheduling only the sensing needed to control localization uncertainty.}
+}
+
+@inproceedings{zhang2025predicted,
+  title={Motion Planning and Control with Unknown Nonlinear Dynamics through Predicted Reachability},
+  author={Zhang, Zhiquan and Puthumanaillam, Gokul and Vora, Manav and Ornik, Melkior},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2025},
+  pages={342--349},
+  venue={IROS},
+  pdf={https://doi.org/10.1109/IROS60139.2025.11245807},
+  arxiv={2503.03633},
+  doi={10.1109/IROS60139.2025.11245807},
+  tags={robotics, planning, control-safety},
+  peer_reviewed={true},
+  abstract={A planning and control framework that incrementally learns predictive reachability for systems with unknown nonlinear dynamics.}
+}
+
+% CCTA proceedings DOI, pages, and IEEE Xplore record were not indexed at the time of this audit.
+@inproceedings{casselman2026virtual,
+  title={Virtual Force-Based Routing of Modular Agents on a Graph},
+  author={Casselman, Adam and Vora, Manav and Ornik, Melkior},
+  booktitle={10th IEEE Conference on Control Technology and Applications},
+  year={2026},
+  venue={IEEE CCTA},
+  arxiv={2505.00928},
+  tags={multi-agent, planning, resource-constraints},
+  peer_reviewed={true},
+  abstract={A virtual-force routing method for modular agents that balances target coverage with the resource benefits of joining and separating in transit.}
+}
+
+@inproceedings{dey2025counterdeceptiveness,
+  title={Optimizing a Model-Agnostic Measure of Graph Counterdeceptiveness via Reattachment},
+  author={Dey, Anakin and Ruggerio, Sam and Vora, Manav and Ornik, Melkior},
+  booktitle={2025 IEEE 5th Cyber Awareness and Research Symposium},
+  year={2025},
+  pages={1--7},
+  venue={IEEE CARS},
+  pdf={https://mornik.web.illinois.edu/wp-content/uploads/DRVO25.pdf},
+  arxiv={2311.15093},
+  doi={10.1109/CARS67163.2025.11337469},
+  code={https://github.com/leadcatlab/counterdeception},
+  tags={planning, control-safety},
+  peer_reviewed={true},
+  abstract={A graph-design method that improves early goal recognition by optimizing a model-agnostic counterdeceptiveness measure under length constraints.}
 }

@@ -2,21 +2,20 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Manav Vora
 first_name: Manav
 middle_name:
 last_name: Vora
 contact_note: I'd love to connect! Feel free to email me directly or reach out on LinkedIn.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: >
+  Ph.D. candidate developing scalable learning and decision-making methods for multi-agent systems and robotics under resource and information constraints.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  © Manav Vora. Hosted on GitHub Pages.
+keywords: multi-agent systems, robotics, reinforcement learning, planning, POMDPs, autonomous systems
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚛️ # retained for legacy al-folio pages; the research layout uses assets/favicon.ico
 
-url: https://Manavvora.github.io/ # the base hostname & protocol for your site
+url: https://manavvora.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -62,8 +61,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -185,17 +184,13 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - scout-comm.github.io/
   - vendor
-  - _pages/blog.md
-  - _pages/profiles.md
   - projects.md
   - 404.md
-  - _pages/teaching.md
-  - _pages/dropdown.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -277,7 +272,7 @@ scholar:
 
   source: /_bibliography/
   bibliography: papers.bib
-  bibliography_template: bib
+  bibliography_template: research-bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
@@ -316,14 +311,23 @@ filtered_bibtex_keywords:
     blog,
     code,
     google_scholar_id,
+    featured_order,
     html,
     inspirehep_id,
+    openreview,
     pdf,
     poster,
     preview,
     selected,
     slides,
     supp,
+    tags,
+    venue,
+    distinction,
+    oral,
+    peer_reviewed,
+    preprint,
+    thesis_core,
     video,
     website,
   ]
@@ -353,7 +357,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # disabled: the core research layout uses native responsive sizing
   widths:
     - 480
     - 800
@@ -619,25 +623,3 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references

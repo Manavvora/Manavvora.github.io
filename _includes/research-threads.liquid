@@ -1,0 +1,19 @@
+<section class="research-threads research-threads--{{ include.variant }}" aria-labelledby="{{ include.variant }}-threads-heading">
+  <div class="section-heading section-heading--threads">
+    <p class="eyebrow">Research threads</p>
+    <h2 id="{{ include.variant }}-threads-heading">Scaling autonomy where coordination is constrained.</h2>
+  </div>
+  <ol class="thread-list">
+    {% for thread in site.data.research_identity.research_threads %}
+      <li class="thread">
+        <span class="thread-number" aria-hidden="true">0{{ forloop.index }}</span>
+        <div>
+          <h3>{{ thread.title }}</h3>
+          <p>{{ thread.summary }}</p>
+          <p class="thread-work">{{ thread.published }}</p>
+          {% if thread.current %}<p class="thread-current"><span>Current</span>{{ thread.current }}</p>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
