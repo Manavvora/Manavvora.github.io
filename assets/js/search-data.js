@@ -9,46 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "A few of my research code releases and open-source contributions",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "post-a-post-with-image-galleries",
-      
-        title: "a post with image galleries",
-      
-      description: "this is what included image galleries could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/photo-gallery/";
-        
-      },
-    },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+  },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
       
         title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
@@ -57,226 +18,6 @@ ninja.data = [{
       handler: () => {
         
           window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-        
-      },
-    },{id: "post-a-post-with-tabs",
-      
-        title: "a post with tabs",
-      
-      description: "this is what included tabs in a post could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/tabs/";
-        
-      },
-    },{id: "post-a-post-with-typograms",
-      
-        title: "a post with typograms",
-      
-      description: "this is what included typograms code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/typograms/";
-        
-      },
-    },{id: "post-a-post-that-can-be-cited",
-      
-        title: "a post that can be cited",
-      
-      description: "this is what a post that can be cited looks like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/post-citation/";
-        
-      },
-    },{id: "post-a-post-with-pseudo-code",
-      
-        title: "a post with pseudo code",
-      
-      description: "this is what included pseudo code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/pseudocode/";
-        
-      },
-    },{id: "post-a-post-with-code-diff",
-      
-        title: "a post with code diff",
-      
-      description: "this is how you can display code diffs",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/code-diff/";
-        
-      },
-    },{id: "post-a-post-with-advanced-image-components",
-      
-        title: "a post with advanced image components",
-      
-      description: "this is what advanced image components could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/advanced-images/";
-        
-      },
-    },{id: "post-a-post-with-vega-lite",
-      
-        title: "a post with vega lite",
-      
-      description: "this is what included vega lite code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/vega-lite/";
-        
-      },
-    },{id: "post-a-post-with-geojson",
-      
-        title: "a post with geojson",
-      
-      description: "this is what included geojson code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/geojson-map/";
-        
-      },
-    },{id: "post-a-post-with-echarts",
-      
-        title: "a post with echarts",
-      
-      description: "this is what included echarts code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/echarts/";
-        
-      },
-    },{id: "post-a-post-with-chart-js",
-      
-        title: "a post with chart.js",
-      
-      description: "this is what included chart.js code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/chartjs/";
-        
-      },
-    },{id: "post-a-post-with-tikzjax",
-      
-        title: "a post with TikZJax",
-      
-      description: "this is what included TikZ code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tikzjax/";
-        
-      },
-    },{id: "post-a-post-with-bibliography",
-      
-        title: "a post with bibliography",
-      
-      description: "an example of a blog post with bibliography",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/post-bibliography/";
-        
-      },
-    },{id: "post-a-post-with-jupyter-notebook",
-      
-        title: "a post with jupyter notebook",
-      
-      description: "an example of a blog post with jupyter notebook",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/jupyter-notebook/";
-        
-      },
-    },{id: "post-a-post-with-custom-blockquotes",
-      
-        title: "a post with custom blockquotes",
-      
-      description: "an example of a blog post with custom blockquotes",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/custom-blockquotes/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-      
-        title: "a post with table of contents on a sidebar",
-      
-      description: "an example of a blog post with table of contents on a sidebar",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/sidebar-table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-audios",
-      
-        title: "a post with audios",
-      
-      description: "this is what included audios could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/audios/";
-        
-      },
-    },{id: "post-a-post-with-videos",
-      
-        title: "a post with videos",
-      
-      description: "this is what included videos could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/videos/";
-        
-      },
-    },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-      
-        title: "displaying beautiful tables with Bootstrap Tables",
-      
-      description: "an example of how to use Bootstrap Tables",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tables/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents",
-      
-        title: "a post with table of contents",
-      
-      description: "an example of a blog post with table of contents",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-giscus-comments",
-      
-        title: "a post with giscus comments",
-      
-      description: "an example of a blog post with giscus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2022/giscus-comments/";
         
       },
     },{id: "post-displaying-external-posts-on-your-al-folio-blog",
@@ -290,122 +31,53 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "post-a-post-with-redirect",
-      
-        title: "a post with redirect",
-      
-      description: "you can also redirect to assets like pdf",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/assets/pdf/example_pdf.pdf";
-        
-      },
-    },{id: "post-a-post-with-diagrams",
-      
-        title: "a post with diagrams",
-      
-      description: "an example of a blog post with diagrams",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2021/diagrams/";
-        
-      },
-    },{id: "post-a-distill-style-blog-post",
-      
-        title: "a distill-style blog post",
-      
-      description: "an example of a distill-style blog post and main elements",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2021/distill/";
-        
-      },
-    },{id: "post-a-post-with-twitter",
-      
-        title: "a post with twitter",
-      
-      description: "an example of a blog post with twitter",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2020/twitter/";
-        
-      },
-    },{id: "post-a-post-with-disqus-comments",
-      
-        title: "a post with disqus comments",
-      
-      description: "an example of a blog post with disqus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/disqus-comments/";
-        
-      },
-    },{id: "post-a-post-with-math",
-      
-        title: "a post with math",
-      
-      description: "an example of a blog post with some math",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/math/";
-        
-      },
-    },{id: "post-a-post-with-code",
-      
-        title: "a post with code",
-      
-      description: "an example of a blog post with some code",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/code/";
-        
-      },
-    },{id: "post-a-post-with-images",
-      
-        title: "a post with images",
-      
-      description: "this is what included images could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/images/";
-        
-      },
-    },{id: "post-a-post-with-formatting-and-links",
-      
-        title: "a post with formatting and links",
-      
-      description: "march &amp; april, looking forward to summer",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/formatting-and-links/";
-        
-      },
-    },{id: "news-received-uiuc-ae-department-fellowship-mortar-board",
-          title: 'Received UIUC AE Department Fellowship :mortar_board:',
+    },{id: "news-received-the-uiuc-aerospace-engineering-department-fellowship",
+          title: 'Received the UIUC Aerospace Engineering Department Fellowship.',
           description: "",
-          section: "News",},{id: "news-welfare-maximization-algorithm-for-solving-budget-constrained-pomdps-accepted-in-ieee-lcss-presentation-at-ieee-cdc-2023-confetti-ball",
-          title: 'Welfare Maximization Algorithm for Solving Budget-Constrained POMDPs accepted in IEEE LCSS (Presentation at...',
+          section: "News",},{id: "news-welfare-maximization-algorithm-for-solving-budget-constrained-multi-component-pomdps-was-accepted-in-ieee-control-systems-letters-and-selected-for-presentation-at-cdc-2023",
+          title: 'Welfare Maximization Algorithm for Solving Budget-Constrained Multi-Component POMDPs was accepted in IEEE Control...',
           description: "",
-          section: "News",},{id: "news-received-ieee-cdc-2023-travel-award-airplane",
-          title: 'Received IEEE CDC 2023 Travel Award! :airplane:',
+          section: "News",},{id: "news-received-an-ieee-cdc-2023-student-travel-award",
+          title: 'Received an IEEE CDC 2023 Student Travel Award.',
           description: "",
-          section: "News",},{id: "news-nncs-verification-accepted-at-aiaa-scitech-2024-tada",
-          title: 'NNCS Verification accepted at AIAA SciTech 2024 :tada:',
+          section: "News",},{id: "news-assured-collision-avoidance-for-learned-controllers-a-case-study-of-acas-xu-was-accepted-at-aiaa-scitech-2024",
+          title: 'Assured Collision Avoidance for Learned Controllers: A Case Study of ACAS Xu was...',
           description: "",
-          section: "News",},{id: "news-comtraq-mpc-accepted-at-iros-2024-oral-robot",
-          title: 'ComTraQ-MPC accepted at IROS 2024 (Oral) :robot:',
+          section: "News",},{id: "news-comtraq-mpc-was-accepted-at-iros-2024-for-an-oral-presentation",
+          title: 'ComTraQ-MPC was accepted at IROS 2024 for an oral presentation.',
           description: "",
-          section: "News",},{id: "news-cleared-my-ph-d-qualifying-exam-tada",
-          title: 'Cleared my Ph.D. Qualifying Exam! :tada:',
+          section: "News",},{id: "news-cleared-the-ph-d-qualifying-examination",
+          title: 'Cleared the Ph.D. Qualifying Examination.',
+          description: "",
+          section: "News",},{id: "news-belief-conditioned-one-step-diffusion-was-accepted-to-corl-2025-as-an-oral-presentation-top-5",
+          title: 'Belief-Conditioned One-Step Diffusion was accepted to CoRL 2025 as an oral presentation (top...',
+          description: "",
+          section: "News",},{id: "news-joined-rivian-as-a-machine-learning-intern",
+          title: 'Joined Rivian as a Machine Learning Intern.',
+          description: "",
+          section: "News",},{id: "news-motion-planning-and-control-with-unknown-nonlinear-dynamics-through-predicted-reachability-was-published-at-iros-2025",
+          title: 'Motion Planning and Control with Unknown Nonlinear Dynamics through Predicted Reachability was published...',
+          description: "",
+          section: "News",},{id: "news-capacity-aware-planning-and-scheduling-in-budget-constrained-multi-agent-mdps-was-published-in-ieee-robotics-and-automation-letters",
+          title: 'Capacity-Aware Planning and Scheduling in Budget-Constrained Multi-Agent MDPs was published in IEEE Robotics...',
+          description: "",
+          section: "News",},{id: "news-presented-research-at-the-office-of-naval-research-annual-review-meeting-at-iowa-state-university",
+          title: 'Presented research at the Office of Naval Research Annual Review Meeting at Iowa...',
+          description: "",
+          section: "News",},{id: "news-uncertia-placed-third-at-the-2026-cozad-new-venture-challenge-securing-125k-in-funding-and-prizes-plus-5k-in-cooley-legal-support",
+          title: 'UncertIA placed third at the 2026 Cozad New Venture Challenge, securing $125K in...',
+          description: "",
+          section: "News",},{id: "news-joined-nokia-bell-labs-as-an-ml-ai-research-intern",
+          title: 'Joined Nokia Bell Labs as an ML/AI Research Intern.',
+          description: "",
+          section: "News",},{id: "news-solving-truly-massive-budgeted-monotonic-pomdps-with-oracle-guided-meta-reinforcement-learning-was-published-in-transactions-on-machine-learning-research",
+          title: 'Solving Truly Massive Budgeted Monotonic POMDPs with Oracle-Guided Meta-Reinforcement Learning was published in...',
+          description: "",
+          section: "News",},{id: "news-virtual-force-based-routing-of-modular-agents-on-a-graph-was-published-at-ieee-ccta-2026",
+          title: 'Virtual Force-Based Routing of Modular Agents on a Graph was published at IEEE...',
+          description: "",
+          section: "News",},{id: "news-presented-scout-at-rlc-2026-as-an-oral-presentation",
+          title: 'Presented SCoUT at RLC 2026 as an oral presentation.',
           description: "",
           section: "News",},{id: "projects-deep-rl-for-intelligent-traffic-light-control",
           title: 'Deep RL for Intelligent Traffic Light Control',
