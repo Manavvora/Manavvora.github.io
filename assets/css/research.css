@@ -183,6 +183,7 @@ html[data-theme="dark"] .hero-utility:hover { filter: drop-shadow(0 0 8px color-
 .publication:hover { margin-inline: -.55rem; padding-inline: .55rem; background: var(--soft); }
 .publication-venue { padding-top: .18rem; color: var(--muted); font-size: .7rem; font-weight: 750; line-height: 1.35; }
 .publication h3 { max-width: 900px; margin-bottom: .3rem; font-family: inherit; font-size: clamp(1rem, 1.55vw, 1.18rem); font-weight: 620; line-height: 1.2; letter-spacing: -.025em; }
+.title-logo { display: inline-block; width: 1.8em; height: 1.4em; margin-right: .3em; object-fit: contain; vertical-align: -.25em; }
 .authors { margin-bottom: .32rem; color: var(--muted); font-size: .82rem; line-height: 1.42; }
 .authors strong { color: var(--ink); font-weight: 700; }
 .publication-details { display: flex; flex-wrap: wrap; gap: .2rem .6rem; margin-bottom: .52rem; color: var(--muted); font-size: .78rem; }

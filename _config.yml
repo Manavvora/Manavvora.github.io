@@ -250,6 +250,7 @@ filtered_bibtex_keywords:
     featured_order,
     html,
     inspirehep_id,
+    logo,
     openreview,
     pdf,
     poster,
@@ -266,6 +267,7 @@ filtered_bibtex_keywords:
     thesis_core,
     video,
     website,
+    website_label,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)

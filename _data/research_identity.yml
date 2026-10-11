@@ -60,6 +60,16 @@ research_threads:
     current: Nash-bargaining foundation models for conflict resolution · game-theoretic long-tail trajectory prediction
 
 projects:
+  - title: Akule
+    logo: /assets/img/logos/akule.svg
+    feature: true
+    description: Fast and scalable multi-robot motion planning through sparse interaction diffusion, learned pairwise selection, and context-aware signed composition, with planning for up to 256 robots.
+    tags: [Multi-agent, Robotics, Generative models, Planning]
+    venue: Preprint · Under review at AAMAS 2027
+    paper: /assets/pdf/akule_arxiv.pdf
+    website: https://akule-diff.github.io/
+    website_label: Project Website
+    code: https://github.com/akule-diff/Akule
   - title: SCoUT
     feature: true
     description: Scalable communication for multi-agent reinforcement learning through utility-guided temporal grouping and counterfactual credit assignment.
@@ -67,6 +77,7 @@ projects:
     venue: RLC 2026 · Oral
     paper: https://rlj.cs.umass.edu/2026/papers/Paper97.html
     website: https://scout-comm.github.io/
+    website_label: Project Website
     code: https://github.com/scout-comm/scout
   - title: Belief-Conditioned One-Step Diffusion
     feature: true

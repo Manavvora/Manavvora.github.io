@@ -3,7 +3,7 @@
     {% if entry.venue %}{{ entry.venue }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% else %}{{ entry.journal }}{% endif %}{% if entry.year %}<br>{{ entry.year }}{% endif %}
   </div>
   <div>
-    <h3>{{ entry.title }}</h3>
+    <h3>{% if entry.logo %}<img class="title-logo" src="{{ entry.logo | relative_url }}" alt="" width="58" height="45">{% endif %}{{ entry.title }}</h3>
     <p class="authors">
       {% for author in entry.author_array %}
         {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
@@ -30,7 +30,7 @@
       {% if entry.pdf %}<a class="resource-link" href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">Paper{% include external-arrow.liquid %}</a>{% endif %}
       {% if entry.arxiv %}<a class="resource-link" href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv{% include external-arrow.liquid %}</a>{% endif %}
       {% if entry.openreview %}<a class="resource-link" href="{{ entry.openreview }}">OpenReview{% include external-arrow.liquid %}</a>{% endif %}
-      {% if entry.website %}<a class="resource-link" href="{{ entry.website }}">Project{% include external-arrow.liquid %}</a>{% endif %}
+      {% if entry.website %}<a class="resource-link" href="{{ entry.website }}">{{ entry.website_label | default: 'Project' }}{% include external-arrow.liquid %}</a>{% endif %}
       {% if entry.code %}<a class="resource-link" href="{{ entry.code }}">Code{% include external-arrow.liquid %}</a>{% endif %}
       {% if entry.video %}<a class="resource-link" href="{{ entry.video }}">Video{% include external-arrow.liquid %}</a>{% endif %}
       {% if entry.doi %}<a class="resource-link" href="https://doi.org/{{ entry.doi }}">DOI{% include external-arrow.liquid %}</a>{% endif %}
