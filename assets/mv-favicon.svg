@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fira Mono Bold outlines: independent of system fonts. -->
   <style>
     .bg { fill: #1e2228; }
     .mark { fill: #f7f5ef; }
@@ -8,5 +9,7 @@
     }
   </style>
   <rect class="bg" width="64" height="64"/>
-  <text class="mark" x="31.5" y="39.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" letter-spacing="-3">MV</text>
+  <g class="mark" transform="translate(15.2 41.702) scale(0.028 -0.028)">
+    <path transform="translate(0 0)" d="M583 0H439L431 297Q430 319 430 357Q430 407 433.0 454.5Q436 502 440 554L362 118H238L153 554Q164 439 164 347L163 294L158 0H17L56 693H225L302 245L375 693H544Z"/><path transform="translate(600 0)" d="M433 693H601L401 0H199L0 693H174L303 128Z"/>
+  </g>
 </svg>
