@@ -70,7 +70,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Fira Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 16px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -88,7 +88,7 @@ svg.icon-solid { fill: currentColor; stroke: none; }
 
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: var(--paper); }
 .header-frame { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: center; min-height: 62px; gap: 1.1rem; }
-.wordmark { display: grid; width: 30px; height: 30px; place-items: center; color: var(--paper); background: var(--ink); font-family: Georgia, serif; font-size: .82rem; font-weight: 700; letter-spacing: -.08em; text-decoration: none; }
+.wordmark { display: grid; width: 30px; height: 30px; place-items: center; color: var(--paper); background: var(--ink); font-family: inherit; font-size: .82rem; font-weight: 700; letter-spacing: 0; text-decoration: none; }
 .primary-nav { min-width: 0; }
 .ordered-nav { display: flex; align-items: center; gap: .2rem; overflow-x: auto; scrollbar-width: none; }
 .ordered-nav::-webkit-scrollbar { display: none; }
@@ -211,7 +211,7 @@ html[data-theme="dark"] .hero-utility:hover { filter: drop-shadow(0 0 8px color-
 .bibtex-details[open] > summary { color: var(--ink); text-decoration-color: currentColor; }
 .bibtex-details[open] > summary::after { transform: rotate(180deg); }
 .bibtex-block { position: relative; min-width: 0; max-width: 100%; margin-top: .45rem; padding: .72rem .75rem; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); }
-.bibtex-block pre { max-width: 100%; overflow-x: auto; margin: 0; padding-right: 3.8rem; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .71rem; line-height: 1.45; white-space: pre; }
+.bibtex-block pre { max-width: 100%; overflow-x: auto; margin: 0; padding-right: 3.8rem; color: var(--ink); font-family: inherit; font-size: .71rem; line-height: 1.45; white-space: pre; }
 .bibtex-copy { position: absolute; top: .48rem; right: .5rem; padding: .2rem .38rem; border: 1px solid var(--line); border-radius: 4px; color: var(--muted); background: var(--paper); cursor: pointer; font-size: .65rem; font-weight: 700; letter-spacing: .04em; }
 .bibtex-copy:hover { color: var(--ink); border-color: var(--quiet); }
 
